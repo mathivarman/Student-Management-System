@@ -54,6 +54,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Students\CreateStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Students\CreateStudentsForm.Designer.cs">
+      <DependentUpon>CreateStudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Students\EditStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Students\EditStudentsForm.Designer.cs">
+      <DependentUpon>EditStudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Students\ListStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Students\ListStudentsForm.Designer.cs">
+      <DependentUpon>ListStudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Students\ShowStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Students\ShowStudentsForm.Designer.cs">
+      <DependentUpon>ShowStudentsForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +99,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\GradeSubject\" />
+    <Folder Include="UI\Grades\" />
+    <Folder Include="UI\StudentSubject\" />
+    <Folder Include="UI\Subjects\" />
+    <Folder Include="UI\SubjectTeacher\" />
+    <Folder Include="UI\Teachers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
