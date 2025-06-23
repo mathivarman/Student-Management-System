@@ -187,6 +187,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\Grades\GradesForm.resx">
+      <DependentUpon>GradesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\StudentSubject\StudentSubjectForm.resx">
       <DependentUpon>StudentSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Students\ListStudentsForm.resx">
       <DependentUpon>ListStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Subjects\SubjectsForm.resx">
+      <DependentUpon>SubjectsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teachers\CreateTeachersForm.resx">
       <DependentUpon>CreateTeachersForm.cs</DependentUpon>
