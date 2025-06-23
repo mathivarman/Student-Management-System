@@ -149,18 +149,18 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(46)))), ((int)(((byte)(104)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-5, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(351, 460);
+            this.panel1.Size = new System.Drawing.Size(371, 460);
             this.panel1.TabIndex = 83;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
-            this.pictureBox1.Location = new System.Drawing.Point(55, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(74, 126);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(217, 178);
@@ -170,7 +170,7 @@
             // pictureBoxloginlogo
             // 
             this.pictureBoxloginlogo.Image = global::StudentManagementSystem.Properties.Resources.loginlogo1;
-            this.pictureBoxloginlogo.Location = new System.Drawing.Point(450, 24);
+            this.pictureBoxloginlogo.Location = new System.Drawing.Point(442, 26);
             this.pictureBoxloginlogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxloginlogo.Name = "pictureBoxloginlogo";
             this.pictureBoxloginlogo.Size = new System.Drawing.Size(189, 185);
