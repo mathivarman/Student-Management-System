@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\StudentManagementSystem",
+    "\\StudentManagementSystem\\UI",
+    "\\StudentManagementSystem\\UI\\Grades",
+    "\\StudentManagementSystem\\UI\\GradeSubject",
+    "\\StudentManagementSystem\\UI\\Students"
+  ],
+  "SelectedNode": "\\StudentManagementSystem\\UI\\Students\\CreateStudentsForm.Designer.cs",
+  "PreviewInSolutionExplorer": false
+}
