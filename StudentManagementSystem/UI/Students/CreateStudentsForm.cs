@@ -16,5 +16,7 @@ namespace StudentManagementSystem.UI.Students
         {
             InitializeComponent();
         }
+
+
     }
 }
