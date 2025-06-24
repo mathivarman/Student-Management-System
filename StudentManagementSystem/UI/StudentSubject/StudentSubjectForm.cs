@@ -21,5 +21,10 @@ namespace StudentManagementSystem.UI.StudentSubject
         {
 
         }
+
+        private void btnAddsubject_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

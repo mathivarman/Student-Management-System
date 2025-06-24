@@ -85,9 +85,9 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(-8, 394);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(651, 7);
             this.groupBox1.TabIndex = 73;
             this.groupBox1.TabStop = false;
@@ -96,7 +96,7 @@
             // 
             this.txtTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTelephone.Location = new System.Drawing.Point(236, 274);
-            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(321, 30);
             this.txtTelephone.TabIndex = 71;
@@ -105,7 +105,7 @@
             // 
             this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtLastname.Location = new System.Drawing.Point(236, 162);
-            this.txtLastname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastname.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.Size = new System.Drawing.Size(321, 30);
             this.txtLastname.TabIndex = 70;
@@ -114,7 +114,7 @@
             // 
             this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtFirstname.Location = new System.Drawing.Point(236, 113);
-            this.txtFirstname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFirstname.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstname.Name = "txtFirstname";
             this.txtFirstname.Size = new System.Drawing.Size(321, 30);
             this.txtFirstname.TabIndex = 69;
@@ -123,7 +123,7 @@
             // 
             this.txtTeacherID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTeacherID.Location = new System.Drawing.Point(236, 66);
-            this.txtTeacherID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTeacherID.Margin = new System.Windows.Forms.Padding(4);
             this.txtTeacherID.Name = "txtTeacherID";
             this.txtTeacherID.Size = new System.Drawing.Size(321, 30);
             this.txtTeacherID.TabIndex = 67;
@@ -213,13 +213,13 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.reset;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(321, 416);
+            this.btnReset.Location = new System.Drawing.Point(347, 415);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(104, 47);
-            this.btnReset.TabIndex = 126;
+            this.btnReset.Size = new System.Drawing.Size(92, 47);
+            this.btnReset.TabIndex = 132;
             this.btnReset.Text = "Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReset.UseVisualStyleBackColor = true;
             // 
             // btnClose
@@ -227,13 +227,13 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(449, 416);
+            this.btnClose.Location = new System.Drawing.Point(476, 415);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(115, 47);
-            this.btnClose.TabIndex = 125;
+            this.btnClose.Size = new System.Drawing.Size(90, 47);
+            this.btnClose.TabIndex = 131;
             this.btnClose.Text = "Close";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // btnSave
@@ -241,13 +241,13 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(197, 417);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(225, 416);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 46);
-            this.btnSave.TabIndex = 124;
+            this.btnSave.Size = new System.Drawing.Size(85, 46);
+            this.btnSave.TabIndex = 130;
             this.btnSave.Text = "Save";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = true;
             // 
             // EditTeachersForm
