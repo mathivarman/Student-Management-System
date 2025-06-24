@@ -45,14 +45,13 @@
             // 
             // lbltop
             // 
-            this.lbltop.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lbltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.lbltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbltop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lbltop.ForeColor = System.Drawing.Color.White;
             this.lbltop.Location = new System.Drawing.Point(0, 0);
-            this.lbltop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(649, 46);
+            this.lbltop.Size = new System.Drawing.Size(487, 37);
             this.lbltop.TabIndex = 45;
             this.lbltop.Text = "Mathi\'s Subjects";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -62,17 +61,19 @@
             this.panalSearch.Controls.Add(this.btnSearch);
             this.panalSearch.Controls.Add(this.txtsearch);
             this.panalSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panalSearch.Location = new System.Drawing.Point(0, 46);
+            this.panalSearch.Location = new System.Drawing.Point(0, 37);
+            this.panalSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panalSearch.Name = "panalSearch";
-            this.panalSearch.Size = new System.Drawing.Size(649, 56);
+            this.panalSearch.Size = new System.Drawing.Size(487, 46);
             this.panalSearch.TabIndex = 46;
             // 
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Location = new System.Drawing.Point(353, 16);
+            this.btnSearch.Location = new System.Drawing.Point(265, 13);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 27);
+            this.btnSearch.Size = new System.Drawing.Size(71, 23);
             this.btnSearch.TabIndex = 47;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -80,26 +81,29 @@
             // txtsearch
             // 
             this.txtsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtsearch.Location = new System.Drawing.Point(205, 16);
+            this.txtsearch.Location = new System.Drawing.Point(154, 13);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(142, 26);
+            this.txtsearch.Size = new System.Drawing.Size(108, 23);
             this.txtsearch.TabIndex = 0;
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 108);
+            this.listView1.Location = new System.Drawing.Point(9, 88);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(625, 307);
+            this.listView1.Size = new System.Drawing.Size(470, 250);
             this.listView1.TabIndex = 47;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnDelete.Location = new System.Drawing.Point(195, 454);
+            this.btnDelete.Location = new System.Drawing.Point(146, 369);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(92, 36);
+            this.btnDelete.Size = new System.Drawing.Size(69, 29);
             this.btnDelete.TabIndex = 66;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -107,30 +111,28 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Location = new System.Drawing.Point(553, 454);
+            this.btnClose.Location = new System.Drawing.Point(415, 369);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(84, 36);
+            this.btnClose.Size = new System.Drawing.Size(63, 29);
             this.btnClose.TabIndex = 65;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(-1, 432);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(-1, 351);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(650, 7);
+            this.groupBox1.Size = new System.Drawing.Size(488, 6);
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAdd.Location = new System.Drawing.Point(88, 454);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(66, 369);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 36);
+            this.btnAdd.Size = new System.Drawing.Size(75, 29);
             this.btnAdd.TabIndex = 63;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -138,9 +140,10 @@
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExport.Location = new System.Drawing.Point(374, 454);
+            this.btnExport.Location = new System.Drawing.Point(280, 369);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(75, 36);
+            this.btnExport.Size = new System.Drawing.Size(56, 29);
             this.btnExport.TabIndex = 75;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
@@ -148,9 +151,10 @@
             // btnPrint
             // 
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPrint.Location = new System.Drawing.Point(293, 454);
+            this.btnPrint.Location = new System.Drawing.Point(220, 369);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 36);
+            this.btnPrint.Size = new System.Drawing.Size(56, 29);
             this.btnPrint.TabIndex = 74;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
@@ -158,18 +162,19 @@
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Location = new System.Drawing.Point(455, 454);
+            this.btnRefresh.Location = new System.Drawing.Point(341, 369);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(92, 36);
+            this.btnRefresh.Size = new System.Drawing.Size(69, 29);
             this.btnRefresh.TabIndex = 73;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // StudentSubjectForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 511);
+            this.ClientSize = new System.Drawing.Size(487, 415);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnRefresh);
@@ -180,6 +185,7 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.panalSearch);
             this.Controls.Add(this.lbltop);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StudentSubjectForm";
             this.Text = "StudentSubjectForm";
             this.panalSearch.ResumeLayout(false);

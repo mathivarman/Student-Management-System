@@ -180,7 +180,7 @@
             // 
             // lbltop
             // 
-            this.lbltop.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lbltop.BackColor = System.Drawing.Color.FromArgb(51, 51, 51);
             this.lbltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbltop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lbltop.ForeColor = System.Drawing.Color.White;

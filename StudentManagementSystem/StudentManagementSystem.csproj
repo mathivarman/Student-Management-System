@@ -229,6 +229,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\GradeSubject\GradeSubjectForm.resx">
+      <DependentUpon>GradeSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GradeSubject\SubjectGradeForm.resx">
+      <DependentUpon>SubjectGradeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Grades\GradesForm.resx">
       <DependentUpon>GradesForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +252,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Subjects\SubjectsForm.resx">
       <DependentUpon>SubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SubjectTeacher\SubjectTeacherForm.resx">
+      <DependentUpon>SubjectTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SubjectTeacher\TeacherSubjectForm.resx">
+      <DependentUpon>TeacherSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teachers\CreateTeachersForm.resx">
       <DependentUpon>CreateTeachersForm.cs</DependentUpon>

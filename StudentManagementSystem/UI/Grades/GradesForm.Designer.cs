@@ -44,6 +44,7 @@
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.lbltop = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
@@ -51,9 +52,10 @@
             // txtAdd
             // 
             this.txtAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtAdd.Location = new System.Drawing.Point(946, 217);
+            this.txtAdd.Location = new System.Drawing.Point(710, 176);
+            this.txtAdd.Margin = new System.Windows.Forms.Padding(2);
             this.txtAdd.Name = "txtAdd";
-            this.txtAdd.Size = new System.Drawing.Size(75, 40);
+            this.txtAdd.Size = new System.Drawing.Size(56, 32);
             this.txtAdd.TabIndex = 118;
             this.txtAdd.Text = "Add";
             this.txtAdd.UseVisualStyleBackColor = true;
@@ -61,18 +63,20 @@
             // txtGrade
             // 
             this.txtGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtGrade.Location = new System.Drawing.Point(772, 146);
+            this.txtGrade.Location = new System.Drawing.Point(579, 119);
+            this.txtGrade.Margin = new System.Windows.Forms.Padding(2);
             this.txtGrade.Name = "txtGrade";
-            this.txtGrade.Size = new System.Drawing.Size(249, 34);
+            this.txtGrade.Size = new System.Drawing.Size(188, 29);
             this.txtGrade.TabIndex = 116;
             // 
             // lblGrade
             // 
             this.lblGrade.AutoSize = true;
             this.lblGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblGrade.Location = new System.Drawing.Point(588, 146);
+            this.lblGrade.Location = new System.Drawing.Point(441, 119);
+            this.lblGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGrade.Name = "lblGrade";
-            this.lblGrade.Size = new System.Drawing.Size(80, 29);
+            this.lblGrade.Size = new System.Drawing.Size(62, 24);
             this.lblGrade.TabIndex = 115;
             this.lblGrade.Text = "Grade";
             // 
@@ -80,19 +84,20 @@
             // 
             this.lblcount.AutoSize = true;
             this.lblcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblcount.Location = new System.Drawing.Point(365, 21);
+            this.lblcount.Location = new System.Drawing.Point(274, 17);
+            this.lblcount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblcount.Name = "lblcount";
-            this.lblcount.Size = new System.Drawing.Size(141, 20);
+            this.lblcount.Size = new System.Drawing.Size(121, 17);
             this.lblcount.TabIndex = 48;
             this.lblcount.Text = "No of Grades 100";
             // 
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Location = new System.Drawing.Point(232, 15);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Location = new System.Drawing.Point(174, 12);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(79, 27);
+            this.btnSearch.Size = new System.Drawing.Size(68, 22);
             this.btnSearch.TabIndex = 47;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -103,38 +108,39 @@
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtsearch);
-            this.panel1.Location = new System.Drawing.Point(14, 59);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(10, 48);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(538, 57);
+            this.panel1.Size = new System.Drawing.Size(404, 46);
             this.panel1.TabIndex = 106;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(7, 18);
+            this.label1.Location = new System.Drawing.Point(5, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 46;
             this.label1.Text = "Enter ID";
             // 
             // txtsearch
             // 
             this.txtsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtsearch.Location = new System.Drawing.Point(84, 15);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtsearch.Location = new System.Drawing.Point(63, 12);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(143, 26);
+            this.txtsearch.Size = new System.Drawing.Size(108, 23);
             this.txtsearch.TabIndex = 0;
             // 
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExport.Location = new System.Drawing.Point(758, 614);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExport.Location = new System.Drawing.Point(568, 499);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(75, 36);
+            this.btnExport.Size = new System.Drawing.Size(56, 29);
             this.btnExport.TabIndex = 113;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
@@ -142,10 +148,10 @@
             // btnPrint
             // 
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPrint.Location = new System.Drawing.Point(677, 614);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrint.Location = new System.Drawing.Point(508, 499);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 36);
+            this.btnPrint.Size = new System.Drawing.Size(56, 29);
             this.btnPrint.TabIndex = 112;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
@@ -153,10 +159,10 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnDelete.Location = new System.Drawing.Point(593, 614);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Location = new System.Drawing.Point(437, 499);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 36);
+            this.btnDelete.Size = new System.Drawing.Size(66, 29);
             this.btnDelete.TabIndex = 111;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -164,10 +170,10 @@
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Location = new System.Drawing.Point(840, 614);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRefresh.Location = new System.Drawing.Point(630, 499);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(92, 36);
+            this.btnRefresh.Size = new System.Drawing.Size(69, 29);
             this.btnRefresh.TabIndex = 110;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -175,54 +181,62 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Location = new System.Drawing.Point(937, 614);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Location = new System.Drawing.Point(703, 499);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(84, 36);
+            this.btnClose.Size = new System.Drawing.Size(63, 29);
             this.btnClose.TabIndex = 109;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // groupBoxline
             // 
-            this.groupBoxline.Location = new System.Drawing.Point(-2, 593);
-            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxline.Location = new System.Drawing.Point(-2, 482);
             this.groupBoxline.Name = "groupBoxline";
-            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxline.Size = new System.Drawing.Size(1200, 7);
+            this.groupBoxline.Size = new System.Drawing.Size(900, 6);
             this.groupBoxline.TabIndex = 108;
             this.groupBoxline.TabStop = false;
             // 
             // dgvStudents
             // 
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(26, 138);
-            this.dgvStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvStudents.Location = new System.Drawing.Point(20, 112);
+            this.dgvStudents.Margin = new System.Windows.Forms.Padding(2);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.RowHeadersWidth = 51;
             this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(526, 431);
+            this.dgvStudents.Size = new System.Drawing.Size(394, 350);
             this.dgvStudents.TabIndex = 107;
             // 
             // lbltop
             // 
-            this.lbltop.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lbltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.lbltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbltop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lbltop.ForeColor = System.Drawing.Color.White;
             this.lbltop.Location = new System.Drawing.Point(0, 0);
-            this.lbltop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(1046, 46);
+            this.lbltop.Size = new System.Drawing.Size(784, 37);
             this.lbltop.TabIndex = 105;
             this.lbltop.Text = "Grades Details";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Location = new System.Drawing.Point(294, 499);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 29);
+            this.button1.TabIndex = 119;
+            this.button1.Text = "Add Subject";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // GradesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 664);
+            this.ClientSize = new System.Drawing.Size(784, 540);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtAdd);
             this.Controls.Add(this.txtGrade);
             this.Controls.Add(this.lblGrade);
@@ -235,6 +249,7 @@
             this.Controls.Add(this.groupBoxline);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.lbltop);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GradesForm";
             this.Text = "GradesForm";
             this.panel1.ResumeLayout(false);
@@ -263,5 +278,6 @@
         private System.Windows.Forms.GroupBox groupBoxline;
         private System.Windows.Forms.DataGridView dgvStudents;
         private System.Windows.Forms.Label lbltop;
+        private System.Windows.Forms.Button button1;
     }
 }

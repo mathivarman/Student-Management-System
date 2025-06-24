@@ -227,7 +227,7 @@
             // 
             // lbltop
             // 
-            this.lbltop.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lbltop.BackColor = System.Drawing.Color.FromArgb(51, 51, 51);
             this.lbltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbltop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lbltop.ForeColor = System.Drawing.Color.White;
@@ -236,7 +236,7 @@
             this.lbltop.Name = "lbltop";
             this.lbltop.Size = new System.Drawing.Size(590, 46);
             this.lbltop.TabIndex = 43;
-            this.lbltop.Text = "Student\'s Edits";
+            this.lbltop.Text = "Student's Edits";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EditStudentsForm
