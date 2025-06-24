@@ -53,3 +53,7 @@ C:\Users\mathi\OneDrive\Desktop\StudentManagementSystem\obj\Debug\StudentM.D74F5
 C:\Users\mathi\OneDrive\Desktop\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
 C:\Users\mathi\OneDrive\Desktop\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
 E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe.config
+E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.GradeSubject.GradeSubjectForm.resources
+E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.GradeSubject.SubjectGradeForm.resources
+E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.SubjectTeacher.SubjectTeacherForm.resources
+E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.SubjectTeacher.TeacherSubjectForm.resources
