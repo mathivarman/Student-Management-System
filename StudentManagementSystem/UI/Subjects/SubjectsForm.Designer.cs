@@ -43,11 +43,11 @@
             this.txtSubjectcode = new System.Windows.Forms.TextBox();
             this.btnAddsubject = new System.Windows.Forms.Button();
             this.btnaddgrade = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -218,74 +218,74 @@
             this.btnaddgrade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnaddgrade.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnDelete
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button6.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
-            this.button6.Location = new System.Drawing.Point(311, 496);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 39);
-            this.button6.TabIndex = 136;
-            this.button6.Text = "Delete";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
+            this.btnDelete.Location = new System.Drawing.Point(311, 496);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(85, 39);
+            this.btnDelete.TabIndex = 136;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnRefresh
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button3.Image = global::StudentManagementSystem.Properties.Resources.reset;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(571, 496);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 37);
-            this.button3.TabIndex = 135;
-            this.button3.Text = "Refresh";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.reset;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(571, 496);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(111, 37);
+            this.btnRefresh.TabIndex = 135;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnClose
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button4.Image = global::StudentManagementSystem.Properties.Resources.close;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(685, 496);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 37);
-            this.button4.TabIndex = 134;
-            this.button4.Text = "Close";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(685, 496);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(88, 37);
+            this.btnClose.TabIndex = 134;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnExport
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(481, 496);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(87, 37);
-            this.button5.TabIndex = 133;
-            this.button5.Text = "Export";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.Location = new System.Drawing.Point(481, 496);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(87, 37);
+            this.btnExport.TabIndex = 133;
+            this.btnExport.Text = "Export";
+            this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExport.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnPrint
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button7.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(399, 496);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(79, 37);
-            this.button7.TabIndex = 132;
-            this.button7.Text = "Print";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(399, 496);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(79, 37);
+            this.btnPrint.TabIndex = 132;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // SubjectsForm
             // 
@@ -293,11 +293,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 544);
             this.Controls.Add(this.btnaddgrade);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnAddsubject);
             this.Controls.Add(this.txtSubjectcode);
             this.Controls.Add(this.txtSubjectname);
@@ -334,10 +334,10 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnAddsubject;
         private System.Windows.Forms.Button btnaddgrade;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnPrint;
     }
 }

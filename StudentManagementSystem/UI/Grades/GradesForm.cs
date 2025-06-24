@@ -17,6 +17,5 @@ namespace StudentManagementSystem.UI.Grades
             InitializeComponent();
         }
 
-
     }
 }

@@ -16,5 +16,10 @@ namespace StudentManagementSystem.UI.Students
         {
             InitializeComponent();
         }
+
+        private void ShowStudentsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

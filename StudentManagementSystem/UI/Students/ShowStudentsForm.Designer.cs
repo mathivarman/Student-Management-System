@@ -43,9 +43,9 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblAdmissionNo = new System.Windows.Forms.Label();
             this.lbltop = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtpDOB
@@ -55,7 +55,7 @@
             this.dtpDOB.Location = new System.Drawing.Point(178, 262);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(243, 26);
+            this.dtpDOB.Size = new System.Drawing.Size(268, 26);
             this.dtpDOB.TabIndex = 103;
             // 
             // cmbgrade
@@ -65,7 +65,7 @@
             this.cmbgrade.Location = new System.Drawing.Point(178, 214);
             this.cmbgrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbgrade.Name = "cmbgrade";
-            this.cmbgrade.Size = new System.Drawing.Size(243, 28);
+            this.cmbgrade.Size = new System.Drawing.Size(268, 28);
             this.cmbgrade.TabIndex = 102;
             // 
             // rdoFemale
@@ -105,7 +105,7 @@
             this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtLastname.Location = new System.Drawing.Point(178, 129);
             this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(242, 26);
+            this.txtLastname.Size = new System.Drawing.Size(267, 26);
             this.txtLastname.TabIndex = 98;
             // 
             // txtFirstname
@@ -113,7 +113,7 @@
             this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtFirstname.Location = new System.Drawing.Point(178, 89);
             this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(242, 26);
+            this.txtFirstname.Size = new System.Drawing.Size(267, 26);
             this.txtFirstname.TabIndex = 97;
             // 
             // txtAdmissionNo
@@ -121,7 +121,7 @@
             this.txtAdmissionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtAdmissionNo.Location = new System.Drawing.Point(178, 51);
             this.txtAdmissionNo.Name = "txtAdmissionNo";
-            this.txtAdmissionNo.Size = new System.Drawing.Size(242, 26);
+            this.txtAdmissionNo.Size = new System.Drawing.Size(267, 26);
             this.txtAdmissionNo.TabIndex = 95;
             // 
             // lblDOB
@@ -197,55 +197,56 @@
             this.lbltop.Text = "Student Registration";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnReset
+            // btnExport
             // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.reset;
-            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(255, 336);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(78, 38);
-            this.btnReset.TabIndex = 106;
-            this.btnReset.Text = "Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.Location = new System.Drawing.Point(256, 336);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(88, 37);
+            this.btnExport.TabIndex = 124;
+            this.btnExport.Text = "Export";
+            this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(166, 336);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(77, 37);
+            this.btnPrint.TabIndex = 123;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(351, 337);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Location = new System.Drawing.Point(357, 336);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(74, 37);
-            this.btnClose.TabIndex = 105;
+            this.btnClose.Size = new System.Drawing.Size(88, 37);
+            this.btnClose.TabIndex = 122;
             this.btnClose.Text = "Close";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose.UseVisualStyleBackColor = true;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.save;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(162, 337);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 37);
-            this.btnSave.TabIndex = 104;
-            this.btnSave.Text = "Save";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // ShowStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 394);
-            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.cmbgrade);
             this.Controls.Add(this.rdoFemale);
@@ -264,16 +265,13 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ShowStudentsForm";
             this.Text = "ShowStudentsForm";
+            this.Load += new System.EventHandler(this.ShowStudentsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DateTimePicker dtpDOB;
         private System.Windows.Forms.ComboBox cmbgrade;
         private System.Windows.Forms.RadioButton rdoFemale;
@@ -289,5 +287,8 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblAdmissionNo;
         private System.Windows.Forms.Label lbltop;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnClose;
     }
 }

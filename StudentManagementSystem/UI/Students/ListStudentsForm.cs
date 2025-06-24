@@ -16,5 +16,15 @@ namespace StudentManagementSystem.UI.Students
         {
             InitializeComponent();
         }
+
+        private void lblcount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListStudentsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

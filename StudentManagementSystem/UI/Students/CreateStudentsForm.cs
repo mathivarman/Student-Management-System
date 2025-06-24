@@ -17,6 +17,9 @@ namespace StudentManagementSystem.UI.Students
             InitializeComponent();
         }
 
+        private void CreateStudentsForm_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
