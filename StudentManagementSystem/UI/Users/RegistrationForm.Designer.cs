@@ -36,15 +36,16 @@
             this.txtConpassword = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblsinup = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // lblusername
@@ -107,9 +108,9 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(443, 487);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(651, 7);
             this.groupBox1.TabIndex = 80;
             this.groupBox1.TabStop = false;
@@ -123,6 +124,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(495, 566);
             this.panel1.TabIndex = 83;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
+            this.pictureBox1.Location = new System.Drawing.Point(99, 155);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(289, 219);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btnLogin
             // 
@@ -141,24 +152,14 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::StudentManagementSystem.Properties.Resources.loginlogo1;
-            this.pictureBox5.Location = new System.Drawing.Point(613, 32);
+            this.pictureBox5.Location = new System.Drawing.Point(623, 11);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(252, 228);
+            this.pictureBox5.Size = new System.Drawing.Size(211, 188);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 84;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 155);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(289, 219);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnReset
             // 
@@ -202,11 +203,21 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
             // 
+            // lblsinup
+            // 
+            this.lblsinup.AutoSize = true;
+            this.lblsinup.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsinup.Location = new System.Drawing.Point(659, 221);
+            this.lblsinup.Name = "lblsinup";
+            this.lblsinup.Size = new System.Drawing.Size(135, 36);
+            this.lblsinup.TabIndex = 86;
+            this.lblsinup.Text = "Sign Up";
+            // 
             // RegistrationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 567);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(988, 567);
+            this.Controls.Add(this.lblsinup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel1);
@@ -225,8 +236,8 @@
             this.Text = "RegistrationForm";
             this.Load += new System.EventHandler(this.RegistrationForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +258,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label lblsinup;
     }
 }

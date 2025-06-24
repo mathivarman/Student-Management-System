@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblpassword = new System.Windows.Forms.Label();
             this.lblusername = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxloginlogo = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.lblsinup = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxloginlogo)).BeginInit();
@@ -54,12 +55,22 @@
             this.panel1.Size = new System.Drawing.Size(493, 566);
             this.panel1.TabIndex = 96;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
+            this.pictureBox1.Location = new System.Drawing.Point(93, 159);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(289, 219);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(449, 487);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(651, 7);
             this.groupBox1.TabIndex = 93;
             this.groupBox1.TabStop = false;
@@ -102,23 +113,13 @@
             this.lblusername.TabIndex = 89;
             this.lblusername.Text = "Username";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
-            this.pictureBox1.Location = new System.Drawing.Point(93, 159);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(289, 219);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBoxloginlogo
             // 
             this.pictureBoxloginlogo.Image = global::StudentManagementSystem.Properties.Resources.loginlogo1;
-            this.pictureBoxloginlogo.Location = new System.Drawing.Point(589, 49);
+            this.pictureBoxloginlogo.Location = new System.Drawing.Point(605, 33);
             this.pictureBoxloginlogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxloginlogo.Name = "pictureBoxloginlogo";
-            this.pictureBoxloginlogo.Size = new System.Drawing.Size(252, 228);
+            this.pictureBoxloginlogo.Size = new System.Drawing.Size(225, 187);
             this.pictureBoxloginlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxloginlogo.TabIndex = 97;
             this.pictureBoxloginlogo.TabStop = false;
@@ -165,11 +166,22 @@
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
             // 
+            // lblsinup
+            // 
+            this.lblsinup.AutoSize = true;
+            this.lblsinup.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsinup.Location = new System.Drawing.Point(664, 239);
+            this.lblsinup.Name = "lblsinup";
+            this.lblsinup.Size = new System.Drawing.Size(113, 36);
+            this.lblsinup.TabIndex = 98;
+            this.lblsinup.Text = "Log In";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 567);
+            this.Controls.Add(this.lblsinup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnReset);
@@ -205,5 +217,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label lblsinup;
     }
 }

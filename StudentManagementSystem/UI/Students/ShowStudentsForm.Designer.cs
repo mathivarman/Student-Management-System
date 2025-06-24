@@ -52,7 +52,7 @@
             // 
             this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtpDOB.Location = new System.Drawing.Point(238, 331);
+            this.dtpDOB.Location = new System.Drawing.Point(238, 322);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(323, 30);
@@ -133,7 +133,7 @@
             // 
             this.lblDOB.AutoSize = true;
             this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblDOB.Location = new System.Drawing.Point(34, 331);
+            this.lblDOB.Location = new System.Drawing.Point(34, 327);
             this.lblDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDOB.Name = "lblDOB";
             this.lblDOB.Size = new System.Drawing.Size(118, 25);
@@ -144,7 +144,7 @@
             // 
             this.lblGrade.AutoSize = true;
             this.lblGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblGrade.Location = new System.Drawing.Point(34, 272);
+            this.lblGrade.Location = new System.Drawing.Point(34, 275);
             this.lblGrade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGrade.Name = "lblGrade";
             this.lblGrade.Size = new System.Drawing.Size(66, 25);
@@ -155,7 +155,7 @@
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblGender.Location = new System.Drawing.Point(34, 217);
+            this.lblGender.Location = new System.Drawing.Point(34, 223);
             this.lblGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(77, 25);
@@ -166,7 +166,7 @@
             // 
             this.lblLastname.AutoSize = true;
             this.lblLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblLastname.Location = new System.Drawing.Point(34, 163);
+            this.lblLastname.Location = new System.Drawing.Point(34, 171);
             this.lblLastname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLastname.Name = "lblLastname";
             this.lblLastname.Size = new System.Drawing.Size(106, 25);
@@ -177,7 +177,7 @@
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblFirstName.Location = new System.Drawing.Point(34, 113);
+            this.lblFirstName.Location = new System.Drawing.Point(34, 119);
             this.lblFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(106, 25);

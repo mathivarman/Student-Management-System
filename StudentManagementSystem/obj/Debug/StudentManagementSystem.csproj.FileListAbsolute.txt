@@ -57,3 +57,5 @@ E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentMan
 E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.GradeSubject.SubjectGradeForm.resources
 E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.SubjectTeacher.SubjectTeacherForm.resources
 E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.SubjectTeacher.TeacherSubjectForm.resources
+E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.Students.ShowStudentsForm.resources
+E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.Teachers.ShowTeachersForm.resources
