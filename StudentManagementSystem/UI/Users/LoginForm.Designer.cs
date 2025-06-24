@@ -170,7 +170,7 @@
             // 
             this.lblsinup.AutoSize = true;
             this.lblsinup.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsinup.Location = new System.Drawing.Point(493, 194);
+            this.lblsinup.Location = new System.Drawing.Point(497, 197);
             this.lblsinup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblsinup.Name = "lblsinup";
             this.lblsinup.Size = new System.Drawing.Size(94, 29);
