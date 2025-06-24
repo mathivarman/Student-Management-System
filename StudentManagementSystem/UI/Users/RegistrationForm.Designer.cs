@@ -34,21 +34,23 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.txtConpassword = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxloginlogo = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxloginlogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblusername
@@ -84,7 +86,7 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtUsername.Location = new System.Drawing.Point(724, 287);
+            this.txtUsername.Location = new System.Drawing.Point(753, 286);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(241, 34);
@@ -93,7 +95,7 @@
             // txtpassword
             // 
             this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtpassword.Location = new System.Drawing.Point(724, 343);
+            this.txtpassword.Location = new System.Drawing.Point(753, 342);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(241, 34);
@@ -102,33 +104,11 @@
             // txtConpassword
             // 
             this.txtConpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtConpassword.Location = new System.Drawing.Point(724, 404);
+            this.txtConpassword.Location = new System.Drawing.Point(753, 403);
             this.txtConpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConpassword.Name = "txtConpassword";
             this.txtConpassword.Size = new System.Drawing.Size(241, 34);
             this.txtConpassword.TabIndex = 46;
-            // 
-            // btnReset
-            // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnReset.Location = new System.Drawing.Point(773, 511);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(92, 36);
-            this.btnReset.TabIndex = 82;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Location = new System.Drawing.Point(885, 511);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(84, 36);
-            this.btnClose.TabIndex = 81;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -140,17 +120,6 @@
             this.groupBox1.TabIndex = 80;
             this.groupBox1.TabStop = false;
             // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSave.Location = new System.Drawing.Point(647, 511);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 36);
-            this.btnSave.TabIndex = 79;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
@@ -161,39 +130,64 @@
             this.panel1.Size = new System.Drawing.Size(495, 566);
             this.panel1.TabIndex = 83;
             // 
-            // button1
+            // pictureBox4
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(541, 513);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 36);
-            this.button1.TabIndex = 85;
-            this.button1.Text = "login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Image = global::StudentManagementSystem.Properties.Resources.password;
+            this.pictureBox4.Location = new System.Drawing.Point(725, 403);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(33, 34);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 87;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox3.Image = global::StudentManagementSystem.Properties.Resources.password;
+            this.pictureBox3.Location = new System.Drawing.Point(725, 342);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 34);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 87;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = global::StudentManagementSystem.Properties.Resources.usernameone;
-            this.pictureBox2.Location = new System.Drawing.Point(686, 287);
+            this.pictureBox2.Location = new System.Drawing.Point(726, 286);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 86;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBoxloginlogo
+            // btnLogin
             // 
-            this.pictureBoxloginlogo.Image = global::StudentManagementSystem.Properties.Resources.loginlogo1;
-            this.pictureBoxloginlogo.Location = new System.Drawing.Point(589, 32);
-            this.pictureBoxloginlogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxloginlogo.Name = "pictureBoxloginlogo";
-            this.pictureBoxloginlogo.Size = new System.Drawing.Size(252, 228);
-            this.pictureBoxloginlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxloginlogo.TabIndex = 84;
-            this.pictureBoxloginlogo.TabStop = false;
-            this.pictureBoxloginlogo.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnLogin.Image = global::StudentManagementSystem.Properties.Resources.loginbw;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.Location = new System.Drawing.Point(529, 513);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(89, 36);
+            this.btnLogin.TabIndex = 85;
+            this.btnLogin.Text = "login";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::StudentManagementSystem.Properties.Resources.loginlogo1;
+            this.pictureBox5.Location = new System.Drawing.Point(613, 32);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(252, 228);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 84;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -205,23 +199,58 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
+            // btnReset
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(602, 345);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 87;
-            this.pictureBox3.TabStop = false;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.reset;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(773, 511);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(92, 36);
+            this.btnReset.TabIndex = 82;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(901, 511);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(98, 36);
+            this.btnClose.TabIndex = 81;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.save;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(647, 511);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(100, 36);
+            this.btnSave.TabIndex = 79;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 567);
+            this.ClientSize = new System.Drawing.Size(1011, 567);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBoxloginlogo);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnClose);
@@ -238,10 +267,11 @@
             this.Text = "RegistrationForm";
             this.Load += new System.EventHandler(this.RegistrationForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxloginlogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,9 +290,10 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBoxloginlogo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
