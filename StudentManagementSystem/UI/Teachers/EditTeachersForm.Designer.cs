@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
             this.rdoMale = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.txtTelephone = new System.Windows.Forms.TextBox();
             this.txtLastname = new System.Windows.Forms.TextBox();
             this.txtFirstname = new System.Windows.Forms.TextBox();
@@ -46,27 +43,10 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblTeacherID = new System.Windows.Forms.Label();
             this.lbltop = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnReset
-            // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnReset.Location = new System.Drawing.Point(364, 426);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(92, 36);
-            this.btnReset.TabIndex = 78;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Location = new System.Drawing.Point(476, 426);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(84, 36);
-            this.btnClose.TabIndex = 77;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // dtpDOB
             // 
@@ -110,17 +90,6 @@
             this.groupBox1.Size = new System.Drawing.Size(650, 7);
             this.groupBox1.TabIndex = 73;
             this.groupBox1.TabStop = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSave.Location = new System.Drawing.Point(238, 426);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 36);
-            this.btnSave.TabIndex = 72;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // txtTelephone
             // 
@@ -226,7 +195,7 @@
             // 
             // lbltop
             // 
-            this.lbltop.BackColor = System.Drawing.Color.FromArgb(51, 51, 51);
+            this.lbltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.lbltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbltop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lbltop.ForeColor = System.Drawing.Color.White;
@@ -238,6 +207,48 @@
             this.lbltop.Text = "Vaathi\'s Edit";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.reset;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(338, 426);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(92, 36);
+            this.btnReset.TabIndex = 91;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(460, 426);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(98, 36);
+            this.btnClose.TabIndex = 90;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.save;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(208, 426);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(100, 36);
+            this.btnSave.TabIndex = 89;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
             // EditTeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -245,11 +256,11 @@
             this.ClientSize = new System.Drawing.Size(585, 491);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.rdoFemale);
             this.Controls.Add(this.rdoMale);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtTelephone);
             this.Controls.Add(this.txtLastname);
             this.Controls.Add(this.txtFirstname);
@@ -269,14 +280,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DateTimePicker dtpDOB;
         private System.Windows.Forms.RadioButton rdoFemale;
         private System.Windows.Forms.RadioButton rdoMale;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtTelephone;
         private System.Windows.Forms.TextBox txtLastname;
         private System.Windows.Forms.TextBox txtFirstname;
@@ -288,5 +295,8 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblTeacherID;
         private System.Windows.Forms.Label lbltop;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
     }
 }

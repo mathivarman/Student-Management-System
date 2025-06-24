@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             this.cmbgrade = new System.Windows.Forms.ComboBox();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
             this.rdoMale = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtLastname = new System.Windows.Forms.TextBox();
             this.txtFirstname = new System.Windows.Forms.TextBox();
             this.txtAdmissionNo = new System.Windows.Forms.TextBox();
@@ -46,27 +43,10 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblAdmissionNo = new System.Windows.Forms.Label();
             this.lbltop = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnReset
-            // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnReset.Location = new System.Drawing.Point(356, 436);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(92, 36);
-            this.btnReset.TabIndex = 62;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Location = new System.Drawing.Point(468, 436);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(84, 36);
-            this.btnClose.TabIndex = 61;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // dtpDOB
             // 
@@ -120,17 +100,6 @@
             this.groupBox1.Size = new System.Drawing.Size(650, 7);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnUpdate.Location = new System.Drawing.Point(230, 436);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(100, 36);
-            this.btnUpdate.TabIndex = 54;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // txtLastname
             // 
@@ -227,7 +196,7 @@
             // 
             // lbltop
             // 
-            this.lbltop.BackColor = System.Drawing.Color.FromArgb(51, 51, 51);
+            this.lbltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.lbltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbltop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lbltop.ForeColor = System.Drawing.Color.White;
@@ -236,22 +205,64 @@
             this.lbltop.Name = "lbltop";
             this.lbltop.Size = new System.Drawing.Size(590, 46);
             this.lbltop.TabIndex = 43;
-            this.lbltop.Text = "Student's Edits";
+            this.lbltop.Text = "Student\'s Edits";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.reset;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(338, 427);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(92, 36);
+            this.btnReset.TabIndex = 91;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(460, 427);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(98, 36);
+            this.btnClose.TabIndex = 90;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.save;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(208, 427);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(100, 36);
+            this.btnSave.TabIndex = 89;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // EditStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 498);
+            this.ClientSize = new System.Drawing.Size(590, 487);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.cmbgrade);
             this.Controls.Add(this.rdoFemale);
             this.Controls.Add(this.rdoMale);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtLastname);
             this.Controls.Add(this.txtFirstname);
             this.Controls.Add(this.txtAdmissionNo);
@@ -270,15 +281,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DateTimePicker dtpDOB;
         private System.Windows.Forms.ComboBox cmbgrade;
         private System.Windows.Forms.RadioButton rdoFemale;
         private System.Windows.Forms.RadioButton rdoMale;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtLastname;
         private System.Windows.Forms.TextBox txtFirstname;
         private System.Windows.Forms.TextBox txtAdmissionNo;
@@ -289,5 +296,8 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblAdmissionNo;
         private System.Windows.Forms.Label lbltop;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
     }
 }

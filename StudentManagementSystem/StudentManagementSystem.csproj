@@ -244,6 +244,9 @@
     <EmbeddedResource Include="UI\Students\ListStudentsForm.resx">
       <DependentUpon>ListStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Students\ShowStudentsForm.resx">
+      <DependentUpon>ShowStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Subjects\SubjectsForm.resx">
       <DependentUpon>SubjectsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teachers\ListTeachersForm.resx">
       <DependentUpon>ListTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\ShowTeachersForm.resx">
+      <DependentUpon>ShowTeachersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Users\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -311,6 +317,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loginbw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-export-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-books-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-file-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-15.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
