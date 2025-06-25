@@ -51,7 +51,7 @@
             // 
             // groupBoxline
             // 
-            this.groupBoxline.Location = new System.Drawing.Point(-9, 597);
+            this.groupBoxline.Location = new System.Drawing.Point(-11, 427);
             this.groupBoxline.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Name = "groupBoxline";
             this.groupBoxline.Padding = new System.Windows.Forms.Padding(4);
@@ -63,9 +63,9 @@
             // 
             this.lblcount.AutoSize = true;
             this.lblcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblcount.Location = new System.Drawing.Point(1195, 19);
+            this.lblcount.Location = new System.Drawing.Point(917, 21);
             this.lblcount.Name = "lblcount";
-            this.lblcount.Size = new System.Drawing.Size(156, 20);
+            this.lblcount.Size = new System.Drawing.Size(134, 17);
             this.lblcount.TabIndex = 48;
             this.lblcount.Text = "No of Teachers 100";
             // 
@@ -75,7 +75,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(7, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 46;
             this.label1.Text = "Enter ID";
             // 
@@ -85,18 +85,18 @@
             this.txtsearch.Location = new System.Drawing.Point(84, 15);
             this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(143, 26);
+            this.txtsearch.Size = new System.Drawing.Size(143, 23);
             this.txtsearch.TabIndex = 0;
             // 
             // dgvStudents
             // 
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(19, 142);
+            this.dgvStudents.Location = new System.Drawing.Point(23, 109);
             this.dgvStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.RowHeadersWidth = 51;
             this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(1339, 431);
+            this.dgvStudents.Size = new System.Drawing.Size(1052, 296);
             this.dgvStudents.TabIndex = 76;
             // 
             // panel1
@@ -105,10 +105,10 @@
             this.panel1.Controls.Add(this.lblcount);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtsearch);
-            this.panel1.Location = new System.Drawing.Point(7, 63);
+            this.panel1.Location = new System.Drawing.Point(23, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1351, 57);
+            this.panel1.Size = new System.Drawing.Size(1052, 57);
             this.panel1.TabIndex = 75;
             // 
             // btnSearch
@@ -133,7 +133,7 @@
             this.lbltop.Location = new System.Drawing.Point(0, 0);
             this.lbltop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(1372, 46);
+            this.lbltop.Size = new System.Drawing.Size(1097, 46);
             this.lbltop.TabIndex = 74;
             this.lbltop.Text = "Teachers Details";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,7 +143,7 @@
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(1089, 637);
+            this.btnRefresh.Location = new System.Drawing.Point(871, 455);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(113, 46);
@@ -157,7 +157,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1258, 636);
+            this.btnClose.Location = new System.Drawing.Point(984, 454);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(94, 46);
@@ -171,7 +171,7 @@
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExport.Location = new System.Drawing.Point(933, 637);
+            this.btnExport.Location = new System.Drawing.Point(771, 455);
             this.btnExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(100, 46);
@@ -185,7 +185,7 @@
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(790, 637);
+            this.btnPrint.Location = new System.Drawing.Point(684, 455);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(87, 46);
@@ -199,7 +199,7 @@
             this.btnSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_books_30__1_;
             this.btnSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubject.Location = new System.Drawing.Point(611, 637);
+            this.btnSubject.Location = new System.Drawing.Point(561, 455);
             this.btnSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSubject.Name = "btnSubject";
             this.btnSubject.Size = new System.Drawing.Size(123, 46);
@@ -213,7 +213,7 @@
             this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnShow.Image = global::StudentManagementSystem.Properties.Resources.icons8_show_30;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShow.Location = new System.Drawing.Point(463, 637);
+            this.btnShow.Location = new System.Drawing.Point(469, 455);
             this.btnShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(92, 46);
@@ -226,7 +226,7 @@
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
-            this.btnDelete.Location = new System.Drawing.Point(311, 637);
+            this.btnDelete.Location = new System.Drawing.Point(373, 455);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(96, 46);
@@ -239,7 +239,7 @@
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnEdit.Image = global::StudentManagementSystem.Properties.Resources.icons8_edit_30;
-            this.btnEdit.Location = new System.Drawing.Point(170, 638);
+            this.btnEdit.Location = new System.Drawing.Point(288, 456);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(85, 44);
@@ -252,7 +252,7 @@
             // 
             this.btnADD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnADD.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
-            this.btnADD.Location = new System.Drawing.Point(18, 637);
+            this.btnADD.Location = new System.Drawing.Point(192, 455);
             this.btnADD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnADD.Name = "btnADD";
             this.btnADD.Size = new System.Drawing.Size(96, 46);
@@ -264,7 +264,7 @@
             // ListTeachersForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1372, 709);
+            this.ClientSize = new System.Drawing.Size(1097, 518);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExport);
