@@ -268,7 +268,7 @@
             // ShowTeachersForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(464, 460);
+            this.ClientSize = new System.Drawing.Size(464, 456);
             this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.rdoFemale);
             this.Controls.Add(this.rdoMale);

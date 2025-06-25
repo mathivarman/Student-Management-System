@@ -54,7 +54,7 @@
             this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDOB.Location = new System.Drawing.Point(178, 262);
-            this.dtpDOB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpDOB.Margin = new System.Windows.Forms.Padding(2);
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(268, 26);
             this.dtpDOB.TabIndex = 103;
@@ -64,7 +64,7 @@
             this.cmbgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbgrade.FormattingEnabled = true;
             this.cmbgrade.Location = new System.Drawing.Point(178, 214);
-            this.cmbgrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbgrade.Margin = new System.Windows.Forms.Padding(2);
             this.cmbgrade.Name = "cmbgrade";
             this.cmbgrade.Size = new System.Drawing.Size(268, 28);
             this.cmbgrade.TabIndex = 102;
@@ -73,7 +73,7 @@
             // 
             this.rdoFemale.AutoSize = true;
             this.rdoFemale.Location = new System.Drawing.Point(262, 180);
-            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2);
             this.rdoFemale.Name = "rdoFemale";
             this.rdoFemale.Size = new System.Drawing.Size(59, 17);
             this.rdoFemale.TabIndex = 101;
@@ -85,7 +85,7 @@
             // 
             this.rdoMale.AutoSize = true;
             this.rdoMale.Location = new System.Drawing.Point(178, 180);
-            this.rdoMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoMale.Margin = new System.Windows.Forms.Padding(2);
             this.rdoMale.Name = "rdoMale";
             this.rdoMale.Size = new System.Drawing.Size(48, 17);
             this.rdoMale.TabIndex = 100;
@@ -195,7 +195,7 @@
             this.lbltop.Name = "lbltop";
             this.lbltop.Size = new System.Drawing.Size(457, 37);
             this.lbltop.TabIndex = 89;
-            this.lbltop.Text = "Student Registration";
+            this.lbltop.Text = "Mathis\'s Details";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnExport
@@ -204,7 +204,7 @@
             this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExport.Location = new System.Drawing.Point(257, 335);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(87, 37);
             this.btnExport.TabIndex = 124;
@@ -218,7 +218,7 @@
             this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrint.Location = new System.Drawing.Point(170, 335);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(78, 37);
             this.btnPrint.TabIndex = 123;
@@ -232,7 +232,7 @@
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point(353, 335);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(91, 37);
             this.btnClose.TabIndex = 122;
@@ -263,7 +263,7 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblAdmissionNo);
             this.Controls.Add(this.lbltop);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ShowStudentsForm";
             this.Text = "ShowStudentsForm";
             this.Load += new System.EventHandler(this.ShowStudentsForm_Load);
