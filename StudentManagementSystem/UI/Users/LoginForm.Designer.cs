@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -36,7 +37,6 @@
             this.lblusername = new System.Windows.Forms.Label();
             this.lblsinup = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBoxloginlogo = new System.Windows.Forms.PictureBox();
@@ -55,6 +55,16 @@
             this.panel1.Size = new System.Drawing.Size(493, 581);
             this.panel1.TabIndex = 96;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
+            this.pictureBox1.Location = new System.Drawing.Point(107, 159);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(289, 219);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(449, 487);
@@ -71,7 +81,7 @@
             this.txtpassword.Location = new System.Drawing.Point(711, 373);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(241, 34);
+            this.txtpassword.Size = new System.Drawing.Size(241, 29);
             this.txtpassword.TabIndex = 90;
             // 
             // txtUsername
@@ -80,7 +90,7 @@
             this.txtUsername.Location = new System.Drawing.Point(711, 318);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(241, 34);
+            this.txtUsername.Size = new System.Drawing.Size(241, 29);
             this.txtUsername.TabIndex = 91;
             // 
             // lblpassword
@@ -89,7 +99,7 @@
             this.lblpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lblpassword.Location = new System.Drawing.Point(520, 377);
             this.lblpassword.Name = "lblpassword";
-            this.lblpassword.Size = new System.Drawing.Size(120, 29);
+            this.lblpassword.Size = new System.Drawing.Size(92, 24);
             this.lblpassword.TabIndex = 88;
             this.lblpassword.Text = "Password";
             // 
@@ -99,7 +109,7 @@
             this.lblusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lblusername.Location = new System.Drawing.Point(520, 321);
             this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(124, 29);
+            this.lblusername.Size = new System.Drawing.Size(97, 24);
             this.lblusername.TabIndex = 89;
             this.lblusername.Text = "Username";
             // 
@@ -109,7 +119,7 @@
             this.lblsinup.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsinup.Location = new System.Drawing.Point(665, 242);
             this.lblsinup.Name = "lblsinup";
-            this.lblsinup.Size = new System.Drawing.Size(111, 35);
+            this.lblsinup.Size = new System.Drawing.Size(94, 29);
             this.lblsinup.TabIndex = 98;
             this.lblsinup.Text = "Log In";
             // 
@@ -118,7 +128,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnLogin.Image = global::StudentManagementSystem.Properties.Resources.loginbw;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(525, 508);
+            this.btnLogin.Location = new System.Drawing.Point(663, 508);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(91, 46);
@@ -127,22 +137,12 @@
             this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
-            this.pictureBox1.Location = new System.Drawing.Point(107, 159);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(289, 219);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(692, 508);
+            this.btnReset.Location = new System.Drawing.Point(761, 508);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(91, 46);
@@ -178,7 +178,8 @@
             // 
             // LoginForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 575);
             this.Controls.Add(this.lblsinup);
             this.Controls.Add(this.btnLogin);
