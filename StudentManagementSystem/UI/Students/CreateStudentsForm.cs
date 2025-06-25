@@ -12,6 +12,7 @@ namespace StudentManagementSystem.UI.Students
 {
     public partial class CreateStudentsForm : Form
     {
+
         public CreateStudentsForm()
         {
             InitializeComponent();

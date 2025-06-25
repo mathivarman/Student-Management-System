@@ -58,7 +58,7 @@
             this.lbltop.Name = "lbltop";
             this.lbltop.Size = new System.Drawing.Size(446, 37);
             this.lbltop.TabIndex = 14;
-            this.lbltop.Text = "Mathi\'s Details";
+            this.lbltop.Text = "Student Registration";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnReset

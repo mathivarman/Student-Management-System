@@ -43,6 +43,8 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblcaption = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -118,6 +120,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblcaption);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-7, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -128,7 +132,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
-            this.pictureBox1.Location = new System.Drawing.Point(123, 164);
+            this.pictureBox1.Location = new System.Drawing.Point(137, 134);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(289, 219);
@@ -213,6 +217,28 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(95, 336);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(322, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "one line of code at a time!";
+            // 
+            // lblcaption
+            // 
+            this.lblcaption.AutoSize = true;
+            this.lblcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblcaption.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblcaption.Location = new System.Drawing.Point(95, 305);
+            this.lblcaption.Name = "lblcaption";
+            this.lblcaption.Size = new System.Drawing.Size(313, 31);
+            this.lblcaption.TabIndex = 3;
+            this.lblcaption.Text = "Exploring the world of IT,";
+            // 
             // RegistrationForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -236,6 +262,7 @@
             this.Text = "RegistrationForm";
             this.Load += new System.EventHandler(this.RegistrationForm_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
@@ -259,5 +286,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label lblsinup;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblcaption;
     }
 }
