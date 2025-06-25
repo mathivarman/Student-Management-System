@@ -89,6 +89,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\DbHelper.cs" />
     <Compile Include="DAL\GradesDal.cs" />
     <Compile Include="DAL\GradeSubjectDal.cs" />
     <Compile Include="DAL\StudentsDal.cs" />

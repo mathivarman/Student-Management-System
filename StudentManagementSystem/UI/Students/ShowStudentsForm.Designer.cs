@@ -28,162 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
-            this.cmbgrade = new System.Windows.Forms.ComboBox();
-            this.rdoFemale = new System.Windows.Forms.RadioButton();
-            this.rdoMale = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtLastname = new System.Windows.Forms.TextBox();
-            this.txtFirstname = new System.Windows.Forms.TextBox();
-            this.txtAdmissionNo = new System.Windows.Forms.TextBox();
-            this.lblDOB = new System.Windows.Forms.Label();
-            this.lblGrade = new System.Windows.Forms.Label();
-            this.lblGender = new System.Windows.Forms.Label();
-            this.lblLastname = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.lblAdmissionNo = new System.Windows.Forms.Label();
             this.lbltop = new System.Windows.Forms.Label();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.dtpAdmission = new System.Windows.Forms.DateTimePicker();
+            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
+            this.cmbgrade = new System.Windows.Forms.ComboBox();
+            this.rdoFemale = new System.Windows.Forms.RadioButton();
+            this.rdoMale = new System.Windows.Forms.RadioButton();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtLastname = new System.Windows.Forms.TextBox();
+            this.txtTelephoneNo = new System.Windows.Forms.TextBox();
+            this.txtFirstname = new System.Windows.Forms.TextBox();
+            this.lbladmission = new System.Windows.Forms.Label();
+            this.txtAdmissionNo = new System.Windows.Forms.TextBox();
+            this.lblDOB = new System.Windows.Forms.Label();
+            this.lblGrade = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblLastname = new System.Windows.Forms.Label();
+            this.lblTelephoneno = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblAdmissionNo = new System.Windows.Forms.Label();
+            this.cmbSubjects = new System.Windows.Forms.ComboBox();
+            this.lblsubjects = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // dtpDOB
-            // 
-            this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDOB.Location = new System.Drawing.Point(178, 262);
-            this.dtpDOB.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(268, 26);
-            this.dtpDOB.TabIndex = 103;
-            // 
-            // cmbgrade
-            // 
-            this.cmbgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbgrade.FormattingEnabled = true;
-            this.cmbgrade.Location = new System.Drawing.Point(178, 214);
-            this.cmbgrade.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbgrade.Name = "cmbgrade";
-            this.cmbgrade.Size = new System.Drawing.Size(268, 28);
-            this.cmbgrade.TabIndex = 102;
-            // 
-            // rdoFemale
-            // 
-            this.rdoFemale.AutoSize = true;
-            this.rdoFemale.Location = new System.Drawing.Point(262, 180);
-            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2);
-            this.rdoFemale.Name = "rdoFemale";
-            this.rdoFemale.Size = new System.Drawing.Size(59, 17);
-            this.rdoFemale.TabIndex = 101;
-            this.rdoFemale.TabStop = true;
-            this.rdoFemale.Text = "Female";
-            this.rdoFemale.UseVisualStyleBackColor = true;
-            // 
-            // rdoMale
-            // 
-            this.rdoMale.AutoSize = true;
-            this.rdoMale.Location = new System.Drawing.Point(178, 180);
-            this.rdoMale.Margin = new System.Windows.Forms.Padding(2);
-            this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(48, 17);
-            this.rdoMale.TabIndex = 100;
-            this.rdoMale.TabStop = true;
-            this.rdoMale.Text = "Male";
-            this.rdoMale.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(-4, 318);
+            this.groupBox1.Location = new System.Drawing.Point(-2, 537);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(488, 6);
             this.groupBox1.TabIndex = 99;
             this.groupBox1.TabStop = false;
-            // 
-            // txtLastname
-            // 
-            this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtLastname.Location = new System.Drawing.Point(178, 129);
-            this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(267, 26);
-            this.txtLastname.TabIndex = 98;
-            // 
-            // txtFirstname
-            // 
-            this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtFirstname.Location = new System.Drawing.Point(178, 89);
-            this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(267, 26);
-            this.txtFirstname.TabIndex = 97;
-            // 
-            // txtAdmissionNo
-            // 
-            this.txtAdmissionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtAdmissionNo.Location = new System.Drawing.Point(178, 51);
-            this.txtAdmissionNo.Name = "txtAdmissionNo";
-            this.txtAdmissionNo.Size = new System.Drawing.Size(267, 26);
-            this.txtAdmissionNo.TabIndex = 95;
-            // 
-            // lblDOB
-            // 
-            this.lblDOB.AutoSize = true;
-            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblDOB.Location = new System.Drawing.Point(26, 266);
-            this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(99, 20);
-            this.lblDOB.TabIndex = 94;
-            this.lblDOB.Text = "Date of Birth";
-            // 
-            // lblGrade
-            // 
-            this.lblGrade.AutoSize = true;
-            this.lblGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblGrade.Location = new System.Drawing.Point(26, 223);
-            this.lblGrade.Name = "lblGrade";
-            this.lblGrade.Size = new System.Drawing.Size(54, 20);
-            this.lblGrade.TabIndex = 93;
-            this.lblGrade.Text = "Grade";
-            // 
-            // lblGender
-            // 
-            this.lblGender.AutoSize = true;
-            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblGender.Location = new System.Drawing.Point(26, 181);
-            this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(63, 20);
-            this.lblGender.TabIndex = 92;
-            this.lblGender.Text = "Gender";
-            // 
-            // lblLastname
-            // 
-            this.lblLastname.AutoSize = true;
-            this.lblLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblLastname.Location = new System.Drawing.Point(26, 139);
-            this.lblLastname.Name = "lblLastname";
-            this.lblLastname.Size = new System.Drawing.Size(86, 20);
-            this.lblLastname.TabIndex = 91;
-            this.lblLastname.Text = "Last Name";
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblFirstName.Location = new System.Drawing.Point(26, 97);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(86, 20);
-            this.lblFirstName.TabIndex = 90;
-            this.lblFirstName.Text = "First Name";
-            // 
-            // lblAdmissionNo
-            // 
-            this.lblAdmissionNo.AutoSize = true;
-            this.lblAdmissionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblAdmissionNo.Location = new System.Drawing.Point(26, 54);
-            this.lblAdmissionNo.Name = "lblAdmissionNo";
-            this.lblAdmissionNo.Size = new System.Drawing.Size(106, 20);
-            this.lblAdmissionNo.TabIndex = 96;
-            this.lblAdmissionNo.Text = "Admission No";
             // 
             // lbltop
             // 
@@ -203,7 +84,7 @@
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExport.Location = new System.Drawing.Point(257, 335);
+            this.btnExport.Location = new System.Drawing.Point(241, 554);
             this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(87, 37);
@@ -217,7 +98,7 @@
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(170, 335);
+            this.btnPrint.Location = new System.Drawing.Point(154, 554);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(78, 37);
@@ -231,7 +112,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(353, 335);
+            this.btnClose.Location = new System.Drawing.Point(337, 554);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(91, 37);
@@ -240,28 +121,263 @@
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose.UseVisualStyleBackColor = true;
             // 
+            // dtpAdmission
+            // 
+            this.dtpAdmission.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpAdmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpAdmission.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAdmission.Location = new System.Drawing.Point(172, 449);
+            this.dtpAdmission.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpAdmission.Name = "dtpAdmission";
+            this.dtpAdmission.Size = new System.Drawing.Size(257, 26);
+            this.dtpAdmission.TabIndex = 167;
+            // 
+            // dtpDOB
+            // 
+            this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDOB.Location = new System.Drawing.Point(172, 259);
+            this.dtpDOB.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDOB.Name = "dtpDOB";
+            this.dtpDOB.Size = new System.Drawing.Size(257, 26);
+            this.dtpDOB.TabIndex = 166;
+            // 
+            // cmbgrade
+            // 
+            this.cmbgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbgrade.FormattingEnabled = true;
+            this.cmbgrade.Location = new System.Drawing.Point(172, 218);
+            this.cmbgrade.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbgrade.Name = "cmbgrade";
+            this.cmbgrade.Size = new System.Drawing.Size(257, 28);
+            this.cmbgrade.TabIndex = 165;
+            // 
+            // rdoFemale
+            // 
+            this.rdoFemale.AutoSize = true;
+            this.rdoFemale.Location = new System.Drawing.Point(255, 181);
+            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2);
+            this.rdoFemale.Name = "rdoFemale";
+            this.rdoFemale.Size = new System.Drawing.Size(59, 17);
+            this.rdoFemale.TabIndex = 164;
+            this.rdoFemale.TabStop = true;
+            this.rdoFemale.Text = "Female";
+            this.rdoFemale.UseVisualStyleBackColor = true;
+            // 
+            // rdoMale
+            // 
+            this.rdoMale.AutoSize = true;
+            this.rdoMale.Location = new System.Drawing.Point(172, 181);
+            this.rdoMale.Margin = new System.Windows.Forms.Padding(2);
+            this.rdoMale.Name = "rdoMale";
+            this.rdoMale.Size = new System.Drawing.Size(48, 17);
+            this.rdoMale.TabIndex = 163;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "Male";
+            this.rdoMale.UseVisualStyleBackColor = true;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtAddress.Location = new System.Drawing.Point(172, 390);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(256, 39);
+            this.txtAddress.TabIndex = 162;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtEmail.Location = new System.Drawing.Point(172, 347);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(257, 26);
+            this.txtEmail.TabIndex = 159;
+            // 
+            // txtLastname
+            // 
+            this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtLastname.Location = new System.Drawing.Point(172, 132);
+            this.txtLastname.Name = "txtLastname";
+            this.txtLastname.Size = new System.Drawing.Size(256, 26);
+            this.txtLastname.TabIndex = 161;
+            // 
+            // txtTelephoneNo
+            // 
+            this.txtTelephoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTelephoneNo.Location = new System.Drawing.Point(172, 304);
+            this.txtTelephoneNo.Name = "txtTelephoneNo";
+            this.txtTelephoneNo.Size = new System.Drawing.Size(256, 26);
+            this.txtTelephoneNo.TabIndex = 155;
+            // 
+            // txtFirstname
+            // 
+            this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtFirstname.Location = new System.Drawing.Point(172, 89);
+            this.txtFirstname.Name = "txtFirstname";
+            this.txtFirstname.Size = new System.Drawing.Size(257, 26);
+            this.txtFirstname.TabIndex = 160;
+            // 
+            // lbladmission
+            // 
+            this.lbladmission.AutoSize = true;
+            this.lbladmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbladmission.Location = new System.Drawing.Point(19, 454);
+            this.lbladmission.Name = "lbladmission";
+            this.lbladmission.Size = new System.Drawing.Size(139, 20);
+            this.lbladmission.TabIndex = 153;
+            this.lbladmission.Text = "Date of Admission";
+            // 
+            // txtAdmissionNo
+            // 
+            this.txtAdmissionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtAdmissionNo.Location = new System.Drawing.Point(172, 46);
+            this.txtAdmissionNo.Name = "txtAdmissionNo";
+            this.txtAdmissionNo.Size = new System.Drawing.Size(256, 26);
+            this.txtAdmissionNo.TabIndex = 156;
+            // 
+            // lblDOB
+            // 
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblDOB.Location = new System.Drawing.Point(19, 264);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(99, 20);
+            this.lblDOB.TabIndex = 154;
+            this.lblDOB.Text = "Date of Birth";
+            // 
+            // lblGrade
+            // 
+            this.lblGrade.AutoSize = true;
+            this.lblGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblGrade.Location = new System.Drawing.Point(19, 221);
+            this.lblGrade.Name = "lblGrade";
+            this.lblGrade.Size = new System.Drawing.Size(54, 20);
+            this.lblGrade.TabIndex = 152;
+            this.lblGrade.Text = "Grade";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblAddress.Location = new System.Drawing.Point(19, 393);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(68, 20);
+            this.lblAddress.TabIndex = 150;
+            this.lblAddress.Text = "Address";
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblGender.Location = new System.Drawing.Point(19, 178);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(63, 20);
+            this.lblGender.TabIndex = 151;
+            this.lblGender.Text = "Gender";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblEmail.Location = new System.Drawing.Point(19, 350);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(69, 20);
+            this.lblEmail.TabIndex = 147;
+            this.lblEmail.Text = "Email ID";
+            // 
+            // lblLastname
+            // 
+            this.lblLastname.AutoSize = true;
+            this.lblLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblLastname.Location = new System.Drawing.Point(19, 135);
+            this.lblLastname.Name = "lblLastname";
+            this.lblLastname.Size = new System.Drawing.Size(86, 20);
+            this.lblLastname.TabIndex = 149;
+            this.lblLastname.Text = "Last Name";
+            // 
+            // lblTelephoneno
+            // 
+            this.lblTelephoneno.AutoSize = true;
+            this.lblTelephoneno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTelephoneno.Location = new System.Drawing.Point(19, 307);
+            this.lblTelephoneno.Name = "lblTelephoneno";
+            this.lblTelephoneno.Size = new System.Drawing.Size(111, 20);
+            this.lblTelephoneno.TabIndex = 157;
+            this.lblTelephoneno.Text = "Telephone NO";
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblFirstName.Location = new System.Drawing.Point(19, 92);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(86, 20);
+            this.lblFirstName.TabIndex = 148;
+            this.lblFirstName.Text = "First Name";
+            // 
+            // lblAdmissionNo
+            // 
+            this.lblAdmissionNo.AutoSize = true;
+            this.lblAdmissionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblAdmissionNo.Location = new System.Drawing.Point(19, 49);
+            this.lblAdmissionNo.Name = "lblAdmissionNo";
+            this.lblAdmissionNo.Size = new System.Drawing.Size(106, 20);
+            this.lblAdmissionNo.TabIndex = 158;
+            this.lblAdmissionNo.Text = "Admission No";
+            // 
+            // cmbSubjects
+            // 
+            this.cmbSubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSubjects.FormattingEnabled = true;
+            this.cmbSubjects.Location = new System.Drawing.Point(171, 493);
+            this.cmbSubjects.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSubjects.Name = "cmbSubjects";
+            this.cmbSubjects.Size = new System.Drawing.Size(257, 28);
+            this.cmbSubjects.TabIndex = 169;
+            // 
+            // lblsubjects
+            // 
+            this.lblsubjects.AutoSize = true;
+            this.lblsubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblsubjects.Location = new System.Drawing.Point(19, 496);
+            this.lblsubjects.Name = "lblsubjects";
+            this.lblsubjects.Size = new System.Drawing.Size(54, 20);
+            this.lblsubjects.TabIndex = 168;
+            this.lblsubjects.Text = "Grade";
+            // 
             // ShowStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 394);
-            this.Controls.Add(this.btnExport);
-            this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.btnClose);
+            this.ClientSize = new System.Drawing.Size(457, 602);
+            this.Controls.Add(this.cmbSubjects);
+            this.Controls.Add(this.lblsubjects);
+            this.Controls.Add(this.dtpAdmission);
             this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.cmbgrade);
             this.Controls.Add(this.rdoFemale);
             this.Controls.Add(this.rdoMale);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtLastname);
+            this.Controls.Add(this.txtTelephoneNo);
             this.Controls.Add(this.txtFirstname);
+            this.Controls.Add(this.lbladmission);
             this.Controls.Add(this.txtAdmissionNo);
             this.Controls.Add(this.lblDOB);
             this.Controls.Add(this.lblGrade);
+            this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblLastname);
+            this.Controls.Add(this.lblTelephoneno);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblAdmissionNo);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ShowStudentsForm";
@@ -273,23 +389,33 @@
         }
 
         #endregion
-        private System.Windows.Forms.DateTimePicker dtpDOB;
-        private System.Windows.Forms.ComboBox cmbgrade;
-        private System.Windows.Forms.RadioButton rdoFemale;
-        private System.Windows.Forms.RadioButton rdoMale;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtLastname;
-        private System.Windows.Forms.TextBox txtFirstname;
-        private System.Windows.Forms.TextBox txtAdmissionNo;
-        private System.Windows.Forms.Label lblDOB;
-        private System.Windows.Forms.Label lblGrade;
-        private System.Windows.Forms.Label lblGender;
-        private System.Windows.Forms.Label lblLastname;
-        private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.Label lblAdmissionNo;
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DateTimePicker dtpAdmission;
+        private System.Windows.Forms.DateTimePicker dtpDOB;
+        private System.Windows.Forms.ComboBox cmbgrade;
+        private System.Windows.Forms.RadioButton rdoFemale;
+        private System.Windows.Forms.RadioButton rdoMale;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtLastname;
+        private System.Windows.Forms.TextBox txtTelephoneNo;
+        private System.Windows.Forms.TextBox txtFirstname;
+        private System.Windows.Forms.Label lbladmission;
+        private System.Windows.Forms.TextBox txtAdmissionNo;
+        private System.Windows.Forms.Label lblDOB;
+        private System.Windows.Forms.Label lblGrade;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblLastname;
+        private System.Windows.Forms.Label lblTelephoneno;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Label lblAdmissionNo;
+        private System.Windows.Forms.ComboBox cmbSubjects;
+        private System.Windows.Forms.Label lblsubjects;
     }
 }

@@ -38,9 +38,9 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.lbltop = new System.Windows.Forms.Label();
             this.lblsubject = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblsubindex = new System.Windows.Forms.Label();
             this.txtSubjectname = new System.Windows.Forms.TextBox();
-            this.txtSubjectcode = new System.Windows.Forms.TextBox();
+            this.txtSubjectindex = new System.Windows.Forms.TextBox();
             this.btnAddsubject = new System.Windows.Forms.Button();
             this.btnaddgrade = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
@@ -48,6 +48,10 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.lblsuborder = new System.Windows.Forms.Label();
+            this.txtSubjectorder = new System.Windows.Forms.TextBox();
+            this.lblsubcolor = new System.Windows.Forms.Label();
+            this.txtSubjectcolor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -163,16 +167,16 @@
             this.lblsubject.TabIndex = 102;
             this.lblsubject.Text = "Subject Name";
             // 
-            // label2
+            // lblsubindex
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(439, 168);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 24);
-            this.label2.TabIndex = 102;
-            this.label2.Text = "Subject Code";
+            this.lblsubindex.AutoSize = true;
+            this.lblsubindex.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblsubindex.Location = new System.Drawing.Point(439, 168);
+            this.lblsubindex.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblsubindex.Name = "lblsubindex";
+            this.lblsubindex.Size = new System.Drawing.Size(125, 24);
+            this.lblsubindex.TabIndex = 102;
+            this.lblsubindex.Text = "Subject Index";
             // 
             // txtSubjectname
             // 
@@ -183,20 +187,20 @@
             this.txtSubjectname.Size = new System.Drawing.Size(188, 29);
             this.txtSubjectname.TabIndex = 103;
             // 
-            // txtSubjectcode
+            // txtSubjectindex
             // 
-            this.txtSubjectcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtSubjectcode.Location = new System.Drawing.Point(577, 166);
-            this.txtSubjectcode.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSubjectcode.Name = "txtSubjectcode";
-            this.txtSubjectcode.Size = new System.Drawing.Size(188, 29);
-            this.txtSubjectcode.TabIndex = 103;
+            this.txtSubjectindex.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtSubjectindex.Location = new System.Drawing.Point(577, 166);
+            this.txtSubjectindex.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSubjectindex.Name = "txtSubjectindex";
+            this.txtSubjectindex.Size = new System.Drawing.Size(188, 29);
+            this.txtSubjectindex.TabIndex = 103;
             // 
             // btnAddsubject
             // 
             this.btnAddsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAddsubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
-            this.btnAddsubject.Location = new System.Drawing.Point(692, 226);
+            this.btnAddsubject.Location = new System.Drawing.Point(693, 358);
             this.btnAddsubject.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddsubject.Name = "btnAddsubject";
             this.btnAddsubject.Size = new System.Drawing.Size(72, 37);
@@ -287,6 +291,46 @@
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
+            // lblsuborder
+            // 
+            this.lblsuborder.AutoSize = true;
+            this.lblsuborder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblsuborder.Location = new System.Drawing.Point(439, 225);
+            this.lblsuborder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblsuborder.Name = "lblsuborder";
+            this.lblsuborder.Size = new System.Drawing.Size(127, 24);
+            this.lblsuborder.TabIndex = 102;
+            this.lblsuborder.Text = "Subject Order";
+            // 
+            // txtSubjectorder
+            // 
+            this.txtSubjectorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtSubjectorder.Location = new System.Drawing.Point(577, 223);
+            this.txtSubjectorder.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSubjectorder.Name = "txtSubjectorder";
+            this.txtSubjectorder.Size = new System.Drawing.Size(188, 29);
+            this.txtSubjectorder.TabIndex = 103;
+            // 
+            // lblsubcolor
+            // 
+            this.lblsubcolor.AutoSize = true;
+            this.lblsubcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblsubcolor.Location = new System.Drawing.Point(439, 284);
+            this.lblsubcolor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblsubcolor.Name = "lblsubcolor";
+            this.lblsubcolor.Size = new System.Drawing.Size(123, 24);
+            this.lblsubcolor.TabIndex = 102;
+            this.lblsubcolor.Text = "Subject Color";
+            // 
+            // txtSubjectcolor
+            // 
+            this.txtSubjectcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtSubjectcolor.Location = new System.Drawing.Point(577, 282);
+            this.txtSubjectcolor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSubjectcolor.Name = "txtSubjectcolor";
+            this.txtSubjectcolor.Size = new System.Drawing.Size(188, 29);
+            this.txtSubjectcolor.TabIndex = 103;
+            // 
             // SubjectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,9 +343,13 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnaddgrade);
             this.Controls.Add(this.btnAddsubject);
-            this.Controls.Add(this.txtSubjectcode);
+            this.Controls.Add(this.txtSubjectcolor);
+            this.Controls.Add(this.txtSubjectorder);
+            this.Controls.Add(this.lblsubcolor);
+            this.Controls.Add(this.txtSubjectindex);
+            this.Controls.Add(this.lblsuborder);
             this.Controls.Add(this.txtSubjectname);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblsubindex);
             this.Controls.Add(this.lblsubject);
             this.Controls.Add(this.groupBoxline);
             this.Controls.Add(this.dgvStudents);
@@ -327,9 +375,9 @@
         private System.Windows.Forms.Label lblcount;
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.Label lblsubject;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblsubindex;
         private System.Windows.Forms.TextBox txtSubjectname;
-        private System.Windows.Forms.TextBox txtSubjectcode;
+        private System.Windows.Forms.TextBox txtSubjectindex;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnAddsubject;
@@ -339,5 +387,9 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Label lblsuborder;
+        private System.Windows.Forms.TextBox txtSubjectorder;
+        private System.Windows.Forms.Label lblsubcolor;
+        private System.Windows.Forms.TextBox txtSubjectcolor;
     }
 }

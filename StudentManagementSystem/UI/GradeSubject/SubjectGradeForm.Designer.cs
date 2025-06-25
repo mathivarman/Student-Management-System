@@ -31,8 +31,6 @@
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.lbltop = new System.Windows.Forms.Label();
             this.lvgrades = new System.Windows.Forms.ListView();
-            this.txtGrade = new System.Windows.Forms.TextBox();
-            this.lblGrade = new System.Windows.Forms.Label();
             this.btnAddgrade = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -43,7 +41,7 @@
             // 
             // groupBoxline
             // 
-            this.groupBoxline.Location = new System.Drawing.Point(-24, 261);
+            this.groupBoxline.Location = new System.Drawing.Point(-174, 296);
             this.groupBoxline.Name = "groupBoxline";
             this.groupBoxline.Size = new System.Drawing.Size(900, 6);
             this.groupBoxline.TabIndex = 127;
@@ -57,7 +55,7 @@
             this.lbltop.ForeColor = System.Drawing.Color.White;
             this.lbltop.Location = new System.Drawing.Point(0, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(786, 37);
+            this.lbltop.Size = new System.Drawing.Size(626, 37);
             this.lbltop.TabIndex = 126;
             this.lbltop.Text = "Subject\'s Grade";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -67,36 +65,16 @@
             this.lvgrades.HideSelection = false;
             this.lvgrades.Location = new System.Drawing.Point(30, 56);
             this.lvgrades.Name = "lvgrades";
-            this.lvgrades.Size = new System.Drawing.Size(346, 179);
+            this.lvgrades.Size = new System.Drawing.Size(563, 218);
             this.lvgrades.TabIndex = 125;
             this.lvgrades.UseCompatibleStateImageBehavior = false;
-            // 
-            // txtGrade
-            // 
-            this.txtGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtGrade.Location = new System.Drawing.Point(556, 65);
-            this.txtGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtGrade.Name = "txtGrade";
-            this.txtGrade.Size = new System.Drawing.Size(188, 29);
-            this.txtGrade.TabIndex = 134;
-            // 
-            // lblGrade
-            // 
-            this.lblGrade.AutoSize = true;
-            this.lblGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblGrade.Location = new System.Drawing.Point(418, 65);
-            this.lblGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblGrade.Name = "lblGrade";
-            this.lblGrade.Size = new System.Drawing.Size(62, 24);
-            this.lblGrade.TabIndex = 133;
-            this.lblGrade.Text = "Grade";
             // 
             // btnAddgrade
             // 
             this.btnAddgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAddgrade.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
-            this.btnAddgrade.Location = new System.Drawing.Point(670, 109);
-            this.btnAddgrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddgrade.Location = new System.Drawing.Point(31, 316);
+            this.btnAddgrade.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddgrade.Name = "btnAddgrade";
             this.btnAddgrade.Size = new System.Drawing.Size(72, 37);
             this.btnAddgrade.TabIndex = 141;
@@ -109,7 +87,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(553, 280);
+            this.button1.Location = new System.Drawing.Point(403, 315);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 37);
@@ -122,7 +100,7 @@
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
-            this.btnDelete.Location = new System.Drawing.Point(266, 279);
+            this.btnDelete.Location = new System.Drawing.Point(116, 314);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(84, 39);
@@ -136,7 +114,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(660, 279);
+            this.btnClose.Location = new System.Drawing.Point(510, 314);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(83, 37);
@@ -150,7 +128,7 @@
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExport.Location = new System.Drawing.Point(451, 279);
+            this.btnExport.Location = new System.Drawing.Point(301, 314);
             this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(93, 37);
@@ -164,7 +142,7 @@
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(359, 279);
+            this.btnPrint.Location = new System.Drawing.Point(209, 314);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(83, 37);
@@ -177,15 +155,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 331);
+            this.ClientSize = new System.Drawing.Size(626, 362);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnAddgrade);
-            this.Controls.Add(this.txtGrade);
-            this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.groupBoxline);
             this.Controls.Add(this.lbltop);
             this.Controls.Add(this.lvgrades);
@@ -193,7 +169,6 @@
             this.Text = "SubjectGradeForm";
             this.Load += new System.EventHandler(this.SubjectGradeForm_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -201,8 +176,6 @@
         private System.Windows.Forms.GroupBox groupBoxline;
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.ListView lvgrades;
-        private System.Windows.Forms.TextBox txtGrade;
-        private System.Windows.Forms.Label lblGrade;
         private System.Windows.Forms.Button btnAddgrade;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;

@@ -31,8 +31,6 @@
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.lbltop = new System.Windows.Forms.Label();
             this.lvsubjects = new System.Windows.Forms.ListView();
-            this.txtSubjectname = new System.Windows.Forms.TextBox();
-            this.lblsubject = new System.Windows.Forms.Label();
             this.btnAddsubject = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -43,7 +41,7 @@
             // 
             // groupBoxline
             // 
-            this.groupBoxline.Location = new System.Drawing.Point(-34, 258);
+            this.groupBoxline.Location = new System.Drawing.Point(-191, 318);
             this.groupBoxline.Name = "groupBoxline";
             this.groupBoxline.Size = new System.Drawing.Size(900, 6);
             this.groupBoxline.TabIndex = 138;
@@ -57,7 +55,7 @@
             this.lbltop.ForeColor = System.Drawing.Color.White;
             this.lbltop.Location = new System.Drawing.Point(0, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(748, 37);
+            this.lbltop.Size = new System.Drawing.Size(595, 37);
             this.lbltop.TabIndex = 137;
             this.lbltop.Text = "Teacher\'s Subjects";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -67,36 +65,16 @@
             this.lvsubjects.HideSelection = false;
             this.lvsubjects.Location = new System.Drawing.Point(20, 53);
             this.lvsubjects.Name = "lvsubjects";
-            this.lvsubjects.Size = new System.Drawing.Size(346, 179);
+            this.lvsubjects.Size = new System.Drawing.Size(559, 260);
             this.lvsubjects.TabIndex = 136;
             this.lvsubjects.UseCompatibleStateImageBehavior = false;
-            // 
-            // txtSubjectname
-            // 
-            this.txtSubjectname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtSubjectname.Location = new System.Drawing.Point(546, 65);
-            this.txtSubjectname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtSubjectname.Name = "txtSubjectname";
-            this.txtSubjectname.Size = new System.Drawing.Size(188, 29);
-            this.txtSubjectname.TabIndex = 148;
-            // 
-            // lblsubject
-            // 
-            this.lblsubject.AutoSize = true;
-            this.lblsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblsubject.Location = new System.Drawing.Point(385, 68);
-            this.lblsubject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblsubject.Name = "lblsubject";
-            this.lblsubject.Size = new System.Drawing.Size(129, 24);
-            this.lblsubject.TabIndex = 147;
-            this.lblsubject.Text = "Subject Name";
             // 
             // btnAddsubject
             // 
             this.btnAddsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAddsubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
-            this.btnAddsubject.Location = new System.Drawing.Point(660, 110);
-            this.btnAddsubject.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddsubject.Location = new System.Drawing.Point(26, 330);
+            this.btnAddsubject.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddsubject.Name = "btnAddsubject";
             this.btnAddsubject.Size = new System.Drawing.Size(72, 37);
             this.btnAddsubject.TabIndex = 155;
@@ -109,7 +87,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(546, 269);
+            this.button1.Location = new System.Drawing.Point(389, 329);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 37);
@@ -122,7 +100,7 @@
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
-            this.btnDelete.Location = new System.Drawing.Point(259, 268);
+            this.btnDelete.Location = new System.Drawing.Point(102, 328);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(84, 39);
@@ -136,7 +114,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(653, 268);
+            this.btnClose.Location = new System.Drawing.Point(496, 328);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(83, 37);
@@ -150,7 +128,7 @@
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExport.Location = new System.Drawing.Point(444, 268);
+            this.btnExport.Location = new System.Drawing.Point(287, 328);
             this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(93, 37);
@@ -164,7 +142,7 @@
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(352, 268);
+            this.btnPrint.Location = new System.Drawing.Point(195, 328);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(83, 37);
@@ -177,22 +155,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 312);
+            this.ClientSize = new System.Drawing.Size(595, 374);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnAddsubject);
-            this.Controls.Add(this.txtSubjectname);
-            this.Controls.Add(this.lblsubject);
             this.Controls.Add(this.groupBoxline);
             this.Controls.Add(this.lbltop);
             this.Controls.Add(this.lvsubjects);
             this.Name = "TeacherSubjectForm";
             this.Text = "TeacherSubjectForm";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -200,8 +175,6 @@
         private System.Windows.Forms.GroupBox groupBoxline;
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.ListView lvsubjects;
-        private System.Windows.Forms.TextBox txtSubjectname;
-        private System.Windows.Forms.Label lblsubject;
         private System.Windows.Forms.Button btnAddsubject;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;
