@@ -34,19 +34,19 @@
             this.txtSubjectname = new System.Windows.Forms.TextBox();
             this.lblsubject = new System.Windows.Forms.Label();
             this.btnAddsubject = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // groupBoxline
             // 
             this.groupBoxline.Location = new System.Drawing.Point(-45, 318);
-            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Name = "groupBoxline";
-            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Size = new System.Drawing.Size(1200, 7);
             this.groupBoxline.TabIndex = 138;
             this.groupBoxline.TabStop = false;
@@ -69,7 +69,7 @@
             // 
             this.lvsubjects.HideSelection = false;
             this.lvsubjects.Location = new System.Drawing.Point(27, 65);
-            this.lvsubjects.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvsubjects.Margin = new System.Windows.Forms.Padding(4);
             this.lvsubjects.Name = "lvsubjects";
             this.lvsubjects.Size = new System.Drawing.Size(460, 219);
             this.lvsubjects.TabIndex = 136;
@@ -106,20 +106,6 @@
             this.btnAddsubject.Text = "Add";
             this.btnAddsubject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddsubject.UseVisualStyleBackColor = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.reset;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(521, 331);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(113, 46);
-            this.btnRefresh.TabIndex = 160;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // btnExport
             // 
@@ -176,6 +162,20 @@
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(521, 331);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(113, 46);
+            this.btnRefresh.TabIndex = 160;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            // 
             // TeacherSubjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -192,7 +192,7 @@
             this.Controls.Add(this.groupBoxline);
             this.Controls.Add(this.lbltop);
             this.Controls.Add(this.lvsubjects);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TeacherSubjectForm";
             this.Text = "TeacherSubjectForm";
             this.ResumeLayout(false);
@@ -207,10 +207,10 @@
         private System.Windows.Forms.TextBox txtSubjectname;
         private System.Windows.Forms.Label lblsubject;
         private System.Windows.Forms.Button btnAddsubject;
-        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

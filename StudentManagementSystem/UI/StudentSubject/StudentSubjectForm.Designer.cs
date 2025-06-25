@@ -103,9 +103,9 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(-1, 432);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(948, 7);
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
@@ -182,13 +182,13 @@
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.reset;
+            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefresh.Location = new System.Drawing.Point(378, 459);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(113, 46);
-            this.btnRefresh.TabIndex = 151;
+            this.btnRefresh.TabIndex = 160;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRefresh.UseVisualStyleBackColor = true;

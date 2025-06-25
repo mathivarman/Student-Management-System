@@ -34,11 +34,11 @@
             this.lbltop = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnAddteacher = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTeachername
@@ -63,9 +63,9 @@
             // groupBoxline
             // 
             this.groupBoxline.Location = new System.Drawing.Point(-37, 324);
-            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Name = "groupBoxline";
-            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Size = new System.Drawing.Size(1200, 7);
             this.groupBoxline.TabIndex = 127;
             this.groupBoxline.TabStop = false;
@@ -88,7 +88,7 @@
             // 
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(35, 71);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(460, 219);
             this.listView1.TabIndex = 125;
@@ -106,20 +106,6 @@
             this.btnAddteacher.Text = "Add";
             this.btnAddteacher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddteacher.UseVisualStyleBackColor = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.reset;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(532, 345);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(113, 46);
-            this.btnRefresh.TabIndex = 156;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // btnExport
             // 
@@ -176,11 +162,25 @@
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(532, 345);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(113, 46);
+            this.btnRefresh.TabIndex = 160;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            // 
             // SubjectTeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 394);
+            this.ClientSize = new System.Drawing.Size(1009, 404);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnPrint);
@@ -192,7 +192,7 @@
             this.Controls.Add(this.groupBoxline);
             this.Controls.Add(this.lbltop);
             this.Controls.Add(this.listView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubjectTeacherForm";
             this.Text = "SubjectTeacherForm";
             this.ResumeLayout(false);
@@ -207,10 +207,10 @@
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnAddteacher;
-        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

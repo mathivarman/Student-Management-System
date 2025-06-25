@@ -35,17 +35,17 @@
             this.lblsubject = new System.Windows.Forms.Label();
             this.btnAddsubject = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvsubjects
             // 
             this.lvsubjects.HideSelection = false;
             this.lvsubjects.Location = new System.Drawing.Point(55, 81);
-            this.lvsubjects.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvsubjects.Margin = new System.Windows.Forms.Padding(4);
             this.lvsubjects.Name = "lvsubjects";
             this.lvsubjects.Size = new System.Drawing.Size(460, 219);
             this.lvsubjects.TabIndex = 0;
@@ -68,9 +68,9 @@
             // groupBoxline
             // 
             this.groupBoxline.Location = new System.Drawing.Point(-17, 334);
-            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Name = "groupBoxline";
-            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Size = new System.Drawing.Size(1200, 7);
             this.groupBoxline.TabIndex = 114;
             this.groupBoxline.TabStop = false;
@@ -120,20 +120,6 @@
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.reset;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(777, 356);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(107, 46);
-            this.btnRefresh.TabIndex = 141;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -176,13 +162,27 @@
             this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPrint.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(771, 357);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 46);
+            this.button1.TabIndex = 160;
+            this.button1.Text = "Refresh";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // GradeSubjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1065, 415);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnPrint);
@@ -192,7 +192,7 @@
             this.Controls.Add(this.groupBoxline);
             this.Controls.Add(this.lbltop);
             this.Controls.Add(this.lvsubjects);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GradeSubjectForm";
             this.Text = "GradeSubjectForm";
             this.Load += new System.EventHandler(this.GradeSubjectForm_Load);
@@ -210,9 +210,9 @@
         private System.Windows.Forms.Label lblsubject;
         private System.Windows.Forms.Button btnAddsubject;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button button1;
     }
 }

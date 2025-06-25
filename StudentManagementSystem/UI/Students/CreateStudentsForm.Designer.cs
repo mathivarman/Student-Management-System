@@ -235,7 +235,7 @@
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.reset;
+            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReset.Location = new System.Drawing.Point(335, 482);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -263,7 +263,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.save;
+            this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.icons8_save_30;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(213, 483);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);

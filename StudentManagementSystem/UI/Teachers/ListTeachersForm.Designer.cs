@@ -34,7 +34,6 @@
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.lbltop = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnADD = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,9 +52,9 @@
             // groupBoxline
             // 
             this.groupBoxline.Location = new System.Drawing.Point(-9, 597);
-            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Name = "groupBoxline";
-            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxline.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Size = new System.Drawing.Size(1381, 7);
             this.groupBoxline.TabIndex = 78;
             this.groupBoxline.TabStop = false;
@@ -111,19 +111,6 @@
             this.panel1.Size = new System.Drawing.Size(1351, 57);
             this.panel1.TabIndex = 75;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(245, 16);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(111, 27);
-            this.btnSearch.TabIndex = 49;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // lbltop
             // 
             this.lbltop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
@@ -141,7 +128,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.reset;
+            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefresh.Location = new System.Drawing.Point(1089, 637);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -197,7 +184,7 @@
             // btnSubject
             // 
             this.btnSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_books_30;
+            this.btnSubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_books_30__1_;
             this.btnSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubject.Location = new System.Drawing.Point(611, 637);
             this.btnSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -260,6 +247,19 @@
             this.btnADD.Text = "Add";
             this.btnADD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnADD.UseVisualStyleBackColor = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSearch.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(245, 16);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(111, 27);
+            this.btnSearch.TabIndex = 49;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // ListTeachersForm
             // 
