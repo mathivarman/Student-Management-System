@@ -52,6 +52,7 @@
             // 
             this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDOB.Location = new System.Drawing.Point(235, 345);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDOB.Name = "dtpDOB";
@@ -254,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 501);
+            this.ClientSize = new System.Drawing.Size(585, 489);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);

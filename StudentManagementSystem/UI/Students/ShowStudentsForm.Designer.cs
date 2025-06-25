@@ -52,6 +52,7 @@
             // 
             this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDOB.Location = new System.Drawing.Point(237, 322);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDOB.Name = "dtpDOB";
@@ -95,9 +96,9 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(-5, 391);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(651, 7);
             this.groupBox1.TabIndex = 99;
             this.groupBox1.TabStop = false;
@@ -106,7 +107,7 @@
             // 
             this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtLastname.Location = new System.Drawing.Point(237, 159);
-            this.txtLastname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastname.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.Size = new System.Drawing.Size(355, 30);
             this.txtLastname.TabIndex = 98;
@@ -115,7 +116,7 @@
             // 
             this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtFirstname.Location = new System.Drawing.Point(237, 110);
-            this.txtFirstname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFirstname.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstname.Name = "txtFirstname";
             this.txtFirstname.Size = new System.Drawing.Size(355, 30);
             this.txtFirstname.TabIndex = 97;
@@ -124,7 +125,7 @@
             // 
             this.txtAdmissionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtAdmissionNo.Location = new System.Drawing.Point(237, 63);
-            this.txtAdmissionNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAdmissionNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtAdmissionNo.Name = "txtAdmissionNo";
             this.txtAdmissionNo.Size = new System.Drawing.Size(355, 30);
             this.txtAdmissionNo.TabIndex = 95;

@@ -52,6 +52,7 @@
             // 
             this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDOB.Location = new System.Drawing.Point(232, 345);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDOB.Name = "dtpDOB";

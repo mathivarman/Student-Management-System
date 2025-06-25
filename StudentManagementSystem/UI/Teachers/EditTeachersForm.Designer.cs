@@ -52,10 +52,11 @@
             // 
             this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDOB.Location = new System.Drawing.Point(236, 334);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(323, 30);
+            this.dtpDOB.Size = new System.Drawing.Size(240, 30);
             this.dtpDOB.TabIndex = 76;
             // 
             // rdoFemale
@@ -98,7 +99,7 @@
             this.txtTelephone.Location = new System.Drawing.Point(236, 274);
             this.txtTelephone.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(321, 30);
+            this.txtTelephone.Size = new System.Drawing.Size(238, 30);
             this.txtTelephone.TabIndex = 71;
             // 
             // txtLastname
@@ -107,7 +108,7 @@
             this.txtLastname.Location = new System.Drawing.Point(236, 162);
             this.txtLastname.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(321, 30);
+            this.txtLastname.Size = new System.Drawing.Size(238, 30);
             this.txtLastname.TabIndex = 70;
             // 
             // txtFirstname
@@ -116,7 +117,7 @@
             this.txtFirstname.Location = new System.Drawing.Point(236, 113);
             this.txtFirstname.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(321, 30);
+            this.txtFirstname.Size = new System.Drawing.Size(238, 30);
             this.txtFirstname.TabIndex = 69;
             // 
             // txtTeacherID
@@ -125,7 +126,7 @@
             this.txtTeacherID.Location = new System.Drawing.Point(236, 66);
             this.txtTeacherID.Margin = new System.Windows.Forms.Padding(4);
             this.txtTeacherID.Name = "txtTeacherID";
-            this.txtTeacherID.Size = new System.Drawing.Size(321, 30);
+            this.txtTeacherID.Size = new System.Drawing.Size(238, 30);
             this.txtTeacherID.TabIndex = 67;
             // 
             // lblDOB
@@ -203,7 +204,7 @@
             this.lbltop.Location = new System.Drawing.Point(0, 0);
             this.lbltop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(585, 46);
+            this.lbltop.Size = new System.Drawing.Size(503, 46);
             this.lbltop.TabIndex = 61;
             this.lbltop.Text = "Vaathi\'s Edit";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,7 +214,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(347, 415);
+            this.btnReset.Location = new System.Drawing.Point(276, 417);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(92, 47);
@@ -227,7 +228,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(476, 415);
+            this.btnClose.Location = new System.Drawing.Point(384, 417);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(90, 47);
@@ -241,7 +242,7 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.icons8_save_30;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(225, 416);
+            this.btnSave.Location = new System.Drawing.Point(175, 418);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(85, 46);
@@ -254,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 491);
+            this.ClientSize = new System.Drawing.Size(503, 475);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);

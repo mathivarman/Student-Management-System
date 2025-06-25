@@ -140,7 +140,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnLogin.Image = global::StudentManagementSystem.Properties.Resources.loginbw;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(512, 508);
+            this.btnLogin.Location = new System.Drawing.Point(498, 508);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(78, 36);
@@ -176,7 +176,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(758, 508);
+            this.btnReset.Location = new System.Drawing.Point(749, 508);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(87, 36);
@@ -190,7 +190,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(885, 508);
+            this.btnClose.Location = new System.Drawing.Point(883, 508);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(88, 36);
@@ -204,7 +204,7 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.icons8_save_30;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(636, 508);
+            this.btnSave.Location = new System.Drawing.Point(623, 508);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(79, 36);
@@ -216,7 +216,7 @@
             // RegistrationForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(988, 567);
+            this.ClientSize = new System.Drawing.Size(988, 560);
             this.Controls.Add(this.lblsinup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox5);

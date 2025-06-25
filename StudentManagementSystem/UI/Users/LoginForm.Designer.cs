@@ -118,7 +118,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnLogin.Image = global::StudentManagementSystem.Properties.Resources.loginbw;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(605, 510);
+            this.btnLogin.Location = new System.Drawing.Point(525, 508);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(91, 46);
@@ -142,7 +142,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(723, 510);
+            this.btnReset.Location = new System.Drawing.Point(692, 508);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(91, 46);
@@ -156,7 +156,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(841, 510);
+            this.btnClose.Location = new System.Drawing.Point(859, 508);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(93, 46);
@@ -179,7 +179,7 @@
             // LoginForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(973, 575);
+            this.ClientSize = new System.Drawing.Size(989, 575);
             this.Controls.Add(this.lblsinup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel1);

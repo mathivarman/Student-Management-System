@@ -31,6 +31,7 @@
             this.lbltop = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblcount = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
@@ -44,7 +45,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnADD = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +58,7 @@
             this.lbltop.Location = new System.Drawing.Point(0, 0);
             this.lbltop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(1338, 46);
+            this.lbltop.Size = new System.Drawing.Size(1325, 46);
             this.lbltop.TabIndex = 44;
             this.lbltop.Text = "Students Details";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,25 +72,38 @@
             this.panel1.Location = new System.Drawing.Point(16, 49);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1301, 57);
+            this.panel1.Size = new System.Drawing.Size(1294, 57);
             this.panel1.TabIndex = 45;
             // 
             // lblcount
             // 
             this.lblcount.AutoSize = true;
             this.lblcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblcount.Location = new System.Drawing.Point(1107, 21);
+            this.lblcount.Location = new System.Drawing.Point(1139, 21);
             this.lblcount.Name = "lblcount";
             this.lblcount.Size = new System.Drawing.Size(152, 20);
             this.lblcount.TabIndex = 48;
             this.lblcount.Text = "No of Students 100";
             this.lblcount.Click += new System.EventHandler(this.lblcount_Click);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSearch.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(222, 15);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(121, 28);
+            this.btnSearch.TabIndex = 47;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(13, 18);
+            this.label1.Location = new System.Drawing.Point(-4, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 46;
@@ -99,7 +112,7 @@
             // txtsearch
             // 
             this.txtsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtsearch.Location = new System.Drawing.Point(91, 15);
+            this.txtsearch.Location = new System.Drawing.Point(73, 16);
             this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(143, 26);
@@ -113,16 +126,16 @@
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.RowHeadersWidth = 51;
             this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(1301, 431);
+            this.dgvStudents.Size = new System.Drawing.Size(1294, 431);
             this.dgvStudents.TabIndex = 46;
             // 
             // groupBoxline
             // 
-            this.groupBoxline.Location = new System.Drawing.Point(-11, 583);
+            this.groupBoxline.Location = new System.Drawing.Point(0, 583);
             this.groupBoxline.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxline.Name = "groupBoxline";
             this.groupBoxline.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxline.Size = new System.Drawing.Size(1328, 7);
+            this.groupBoxline.Size = new System.Drawing.Size(1359, 7);
             this.groupBoxline.TabIndex = 64;
             this.groupBoxline.TabStop = false;
             // 
@@ -249,24 +262,10 @@
             this.btnADD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnADD.UseVisualStyleBackColor = true;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(240, 15);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(121, 28);
-            this.btnSearch.TabIndex = 47;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // ListStudentsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1338, 658);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1325, 658);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExport);
@@ -282,6 +281,7 @@
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ListStudentsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListStudentsForm";
             this.Load += new System.EventHandler(this.ListStudentsForm_Load);
             this.panel1.ResumeLayout(false);
