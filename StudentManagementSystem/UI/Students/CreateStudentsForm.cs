@@ -21,5 +21,10 @@ namespace StudentManagementSystem.UI.Students
         {
 
         }
+
+        private void dtpDOB_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
