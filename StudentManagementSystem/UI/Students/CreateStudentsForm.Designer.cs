@@ -56,7 +56,7 @@
             this.lbltop.ForeColor = System.Drawing.Color.White;
             this.lbltop.Location = new System.Drawing.Point(0, 0);
             this.lbltop.Name = "lbltop";
-            this.lbltop.Size = new System.Drawing.Size(450, 37);
+            this.lbltop.Size = new System.Drawing.Size(446, 37);
             this.lbltop.TabIndex = 14;
             this.lbltop.Text = "Mathi\'s Details";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 360);
+            this.ClientSize = new System.Drawing.Size(446, 356);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);

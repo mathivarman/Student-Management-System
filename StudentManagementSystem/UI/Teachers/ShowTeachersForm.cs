@@ -16,5 +16,15 @@ namespace StudentManagementSystem.UI.Teachers
         {
             InitializeComponent();
         }
+
+        private void ShowTeachersForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelephone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
