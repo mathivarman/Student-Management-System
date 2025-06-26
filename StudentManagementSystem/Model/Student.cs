@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace StudentManagementSystem.Model
 {
-    internal class Student
+    public class Student
     {
-        public int Id { get; set; }
+        public String Id { get; set; }
         public string AdmissionNo { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

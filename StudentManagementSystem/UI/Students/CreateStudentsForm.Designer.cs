@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateStudentsForm));
             this.lbltop = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -72,7 +73,7 @@
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReset.Location = new System.Drawing.Point(241, 506);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
@@ -86,7 +87,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point(335, 506);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
@@ -100,7 +101,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.icons8_save_30;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(149, 506);
             this.btnSave.Name = "btnSave";
@@ -109,6 +110,7 @@
             this.btnSave.Text = "Save";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // dtpDOB
             // 
@@ -120,12 +122,15 @@
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(257, 26);
             this.dtpDOB.TabIndex = 146;
-            this.dtpDOB.ValueChanged += new System.EventHandler(this.dtpDOB_ValueChanged);
             // 
             // cmbgrade
             // 
             this.cmbgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbgrade.FormattingEnabled = true;
+            this.cmbgrade.Items.AddRange(new object[] {
+            "10A",
+            "10B",
+            "10C"});
             this.cmbgrade.Location = new System.Drawing.Point(171, 222);
             this.cmbgrade.Margin = new System.Windows.Forms.Padding(2);
             this.cmbgrade.Name = "cmbgrade";
@@ -323,7 +328,6 @@
             this.dtpAdmission.Name = "dtpAdmission";
             this.dtpAdmission.Size = new System.Drawing.Size(257, 26);
             this.dtpAdmission.TabIndex = 146;
-            this.dtpAdmission.ValueChanged += new System.EventHandler(this.dtpDOB_ValueChanged);
             // 
             // CreateStudentsForm
             // 
@@ -359,7 +363,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CreateStudentsForm";
             this.Text = "CreateStudentsForm";
-            this.Load += new System.EventHandler(this.CreateStudentsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,7 +37,7 @@ namespace StudentManagementSystem.DAL
             DataRow row = dt.Rows[0];
             return new Student
             {
-                Id = Convert.ToInt32(row["id"]),
+                Id = row["id"].ToString(),
                 AdmissionNo = row["admission_no"].ToString(),
                 FirstName = row["first_name"].ToString(),
                 LastName = row["last_name"].ToString(),
@@ -48,12 +48,6 @@ namespace StudentManagementSystem.DAL
                 DateOfBirth = Convert.ToDateTime(row["date_of_birth"]),
                 DateOfAdmission = Convert.ToDateTime(row["date_of_admission"]),
                 GradeId = Convert.ToInt32(row["grade_id"]),
-                CreatedAt = Convert.ToDateTime(row["created_at"]),
-                CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
-                UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
-                DeletedBy = row["deleted_by"]?.ToString()
             };
         }
 
@@ -99,8 +93,6 @@ namespace StudentManagementSystem.DAL
                                 date_of_birth = @dob,
                                 date_of_admission = @doa,
                                 grade_id = @gradeId,
-                                updated_at = @updatedAt,
-                                updated_by = @updatedBy
                              WHERE id = @studentId";
 
             var parameters = new MySqlParameter[]
@@ -116,8 +108,8 @@ namespace StudentManagementSystem.DAL
                 new MySqlParameter("@dob", MySqlDbType.Date) { Value = student.DateOfBirth },
                 new MySqlParameter("@doa", MySqlDbType.Date) { Value = student.DateOfAdmission },
                 new MySqlParameter("@gradeId", MySqlDbType.Int32) { Value = student.GradeId },
-                new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = student.UpdatedAt  },
-                new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = student.UpdatedBy  }
+                //new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = student.UpdatedAt  },
+                //new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = student.UpdatedBy  }
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;

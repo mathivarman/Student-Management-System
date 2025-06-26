@@ -109,6 +109,7 @@
             this.btnSave.Text = "Save";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // dtpAdmission
             // 
@@ -136,6 +137,10 @@
             // 
             this.cmbgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbgrade.FormattingEnabled = true;
+            this.cmbgrade.Items.AddRange(new object[] {
+            "10A",
+            "10B",
+            "10C"});
             this.cmbgrade.Location = new System.Drawing.Point(173, 220);
             this.cmbgrade.Margin = new System.Windows.Forms.Padding(2);
             this.cmbgrade.Name = "cmbgrade";
@@ -357,6 +362,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditStudentsForm";
             this.Text = "EditStudentsForm";
+            this.Load += new System.EventHandler(this.EditStudentsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,6 +13,7 @@ namespace StudentManagementSystem.UI.Students
 {
     public partial class ListStudentsForm : Form
     {
+        DAL.StudentsDal studentsDal = new DAL.StudentsDal();
         public ListStudentsForm()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace StudentManagementSystem.UI.Students
 
         private void ListStudentsForm_Load(object sender, EventArgs e)
         {
-            DAL.StudentsDal studentsDal = new DAL.StudentsDal();
+           
             DataTable studentsTable = studentsDal.GetAllStudents();
             dgvStudents.DataSource = studentsTable;
             dgvStudents.Columns["id"].HeaderText = "ID";
@@ -58,8 +59,6 @@ namespace StudentManagementSystem.UI.Students
             if (result == DialogResult.Yes)
             {
                 int studentId = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
-                MessageBox.Show($"{studentId}");
-                DAL.StudentsDal studentsDal = new DAL.StudentsDal();
                 studentsDal.DeleteStudent(studentId);
                 ListStudentsForm_Load(sender, e);
 
@@ -70,8 +69,30 @@ namespace StudentManagementSystem.UI.Students
 
         }
 
+        private void btnADD_Click(object sender, EventArgs e)
+        {
+            
+            CreateStudentsForm createStudentsForm = new CreateStudentsForm();
+            createStudentsForm.ShowDialog();
+         
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+                        if (dgvStudents.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+                int studentId = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
+                EditStudentsForm editStudentForm = new EditStudentsForm(studentId);
+                editStudentForm.ShowDialog();
+                ListStudentsForm_Load(sender, e);
+            }
+        }
     }
             
        
     
-}
+

@@ -12,20 +12,68 @@ namespace StudentManagementSystem.UI.Students
 {
     public partial class CreateStudentsForm : Form
     {
-
+        DAL.StudentsDal studentsDal = new DAL.StudentsDal();
         public CreateStudentsForm()
         {
             InitializeComponent();
         }
 
-        private void CreateStudentsForm_Load(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
+            
+            string firstName = txtFirstname.Text;
+            string lastName = txtLastname.Text;
+            string admissionNo = txtAdmissionNo.Text;
+            string telephoneNo = txtTelephoneNo.Text;
+            string email = txtEmail.Text;
+            string address = txtAddress.Text;
+            DateTime dob = dtpDOB.Value;
+            DateTime admissionDate = dtpAdmission.Value;
+            string grade = cmbgrade.SelectedIndex != -1 ? cmbgrade.SelectedItem.ToString() : null;
+            int gradeid = 0;
+            if (grade != null && int.TryParse(new string(grade.Where(char.IsDigit).ToArray()), out int gradeids))
+            {
+                gradeid = gradeids;
+            }
+            else
+            {
+                gradeid = 0; // Default or error handling
+            }
+            string gender = rdoMale.Checked ? "Male" : "Female";
 
-        }
 
-        private void dtpDOB_ValueChanged(object sender, EventArgs e)
-        {
+            var student = new Model.Student
+            {
+                FirstName = firstName,
+                LastName = lastName,
+                AdmissionNo = admissionNo,
+                Telephone = telephoneNo,
+                Email = email,
+                Address = address,
+                DateOfBirth = dob,
+                DateOfAdmission = admissionDate,
+                GradeId = gradeid,
+                Gender = gender,
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now,
+                CreatedBy = "1"
+            };
 
+
+            studentsDal.AddStudent(student);
+
+
+            txtFirstname.Clear();
+            txtLastname.Clear();
+            txtAdmissionNo.Clear();
+            txtTelephoneNo.Clear();
+            txtEmail.Clear();
+            txtAddress.Clear();
+            cmbgrade.SelectedIndex = -1;
+            rdoMale.Checked = false;
+            rdoFemale.Checked = false;
+
+            MessageBox.Show("Student created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
