@@ -12,7 +12,7 @@ namespace student_management_system.DAL
 {
     internal class DbHelper
     {
-        private static readonly string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        private static readonly string connectionString = ConfigurationManager.ConnectionStrings["MySqlStudentDB"].ConnectionString;
 
 
         public static MySqlConnection GetConnection()

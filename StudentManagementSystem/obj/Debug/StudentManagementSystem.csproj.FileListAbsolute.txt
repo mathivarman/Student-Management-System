@@ -59,3 +59,6 @@ E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentM.D
 E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
 E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
 E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe.config
+E:\github\Student-Management-System\StudentManagementSystem\bin\Debug\MySql.Data.dll
+E:\github\Student-Management-System\StudentManagementSystem\bin\Debug\System.Memory.dll
+E:\github\Student-Management-System\StudentManagementSystem\bin\Debug\System.Numerics.Vectors.dll

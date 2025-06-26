@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace StudentManagementSystem.DAL
 {
@@ -20,8 +21,7 @@ namespace StudentManagementSystem.DAL
                                 date_of_admission, grade_id, created_at, created_by, 
                                 updated_at, updated_by, deleted_at, deleted_by 
                              FROM students 
-                             WHERE deleted_at IS NULL
-                             ORDER BY last_name, first_name";
+                             ORDER BY first_name";
 
             return DbHelper.GetData(query);
         }
@@ -50,9 +50,9 @@ namespace StudentManagementSystem.DAL
                 GradeId = Convert.ToInt32(row["grade_id"]),
                 CreatedAt = Convert.ToDateTime(row["created_at"]),
                 CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = row["updated_at"] as DateTime?,
+                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
                 UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = row["deleted_at"] as DateTime?,
+                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
                 DeletedBy = row["deleted_by"]?.ToString()
             };
         }
@@ -62,10 +62,10 @@ namespace StudentManagementSystem.DAL
             string query = @"INSERT INTO students 
                             (admission_no, first_name, last_name, gender, telephone_no, 
                              email_id, address, date_of_birth, date_of_admission, grade_id, 
-                             created_at, created_by) 
+                              created_by) 
                              VALUES 
                             (@admissionNo, @firstName, @lastName, @gender, @telephoneNo, 
-                             @emailId, @address, @dob, @doa, @gradeId, @createdAt, @createdBy);
+                             @emailId, @address, @dob, @doa, @gradeId, @createdBy);
                              SELECT LAST_INSERT_ID();";
 
             var parameters = new MySqlParameter[]
@@ -80,7 +80,6 @@ namespace StudentManagementSystem.DAL
                 new MySqlParameter("@dob", MySqlDbType.Date) { Value = student.DateOfBirth },
                 new MySqlParameter("@doa", MySqlDbType.Date) { Value = student.DateOfAdmission },
                 new MySqlParameter("@gradeId", MySqlDbType.Int32) { Value = student.GradeId },
-                new MySqlParameter("@createdAt", MySqlDbType.DateTime) { Value = student.CreatedAt },
                 new MySqlParameter("@createdBy", MySqlDbType.VarChar) { Value = student.CreatedBy }
             };
 
@@ -118,23 +117,23 @@ namespace StudentManagementSystem.DAL
                 new MySqlParameter("@doa", MySqlDbType.Date) { Value = student.DateOfAdmission },
                 new MySqlParameter("@gradeId", MySqlDbType.Int32) { Value = student.GradeId },
                 new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = student.UpdatedAt  },
-                new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = student.UpdatedBy ?? "" }
+                new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = student.UpdatedBy  }
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;
         }
 
-        public bool DeleteStudent(int studentId, string deletedBy)
+        public bool DeleteStudent(int studentId)
         {
-            string query = @"UPDATE students 
-                             SET deleted_at = @deletedAt, deleted_by = @deletedBy 
-                             WHERE id = @studentId";
+            string query = @"DELETE
+                            FROM
+                            `student_management_system`.`students`
+                            WHERE id = @studentId";
 
             var parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@studentId", MySqlDbType.Int32) { Value = studentId },
-                new MySqlParameter("@deletedAt", MySqlDbType.DateTime) { Value = DateTime.Now },
-                new MySqlParameter("@deletedBy", MySqlDbType.VarChar) { Value = deletedBy }
+
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;

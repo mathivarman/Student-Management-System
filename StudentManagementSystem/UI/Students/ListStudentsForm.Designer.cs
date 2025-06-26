@@ -84,7 +84,6 @@
             this.lblcount.Size = new System.Drawing.Size(130, 17);
             this.lblcount.TabIndex = 48;
             this.lblcount.Text = "No of Students 100";
-            this.lblcount.Click += new System.EventHandler(this.lblcount_Click);
             // 
             // btnSearch
             // 
@@ -235,6 +234,7 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
