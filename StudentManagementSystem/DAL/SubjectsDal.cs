@@ -18,7 +18,6 @@ namespace StudentManagementSystem.DAL
                                 id, subject_name, subject_index, subject_order, subject_color, 
                                 created_at, created_by, updated_at, updated_by, deleted_at, deleted_by 
                              FROM subjects 
-                             WHERE deleted_at IS NULL 
                              ORDER BY subject_order";
 
             return DbHelper.GetData(query);

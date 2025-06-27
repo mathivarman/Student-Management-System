@@ -19,7 +19,6 @@ namespace StudentManagementSystem.DAL
                                 email_id, address, date_of_birth, date_of_appoint,
                                 created_at, created_by, updated_at, updated_by, deleted_at, deleted_by
                              FROM teachers
-                             WHERE deleted_at IS NULL
                              ORDER BY last_name, first_name";
 
             return DbHelper.GetData(query);

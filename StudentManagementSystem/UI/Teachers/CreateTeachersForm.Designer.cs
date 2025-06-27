@@ -42,15 +42,17 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lbltop = new System.Windows.Forms.Label();
             this.txtTelephone = new System.Windows.Forms.TextBox();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.txtNIC = new System.Windows.Forms.TextBox();
             this.lblnic = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
+            this.dtpAppoint = new System.Windows.Forms.DateTimePicker();
+            this.lblAppoint = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtpDOB
@@ -90,7 +92,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(-9, 407);
+            this.groupBox1.Location = new System.Drawing.Point(-7, 457);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(488, 6);
             this.groupBox1.TabIndex = 54;
@@ -183,48 +185,6 @@
             this.txtTelephone.Size = new System.Drawing.Size(242, 26);
             this.txtTelephone.TabIndex = 52;
             // 
-            // btnReset
-            // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
-            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(229, 426);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(87, 38);
-            this.btnReset.TabIndex = 132;
-            this.btnReset.Text = "Reset";
-            this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(323, 426);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(91, 38);
-            this.btnClose.TabIndex = 131;
-            this.btnClose.Text = "Close";
-            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(137, 426);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(85, 38);
-            this.btnSave.TabIndex = 130;
-            this.btnSave.Text = "Save";
-            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
             // txtNIC
             // 
             this.txtNIC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -280,11 +240,78 @@
             this.lblEmail.TabIndex = 142;
             this.lblEmail.Text = "Email ID";
             // 
+            // dtpAppoint
+            // 
+            this.dtpAppoint.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpAppoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpAppoint.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAppoint.Location = new System.Drawing.Point(174, 415);
+            this.dtpAppoint.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpAppoint.Name = "dtpAppoint";
+            this.dtpAppoint.Size = new System.Drawing.Size(243, 26);
+            this.dtpAppoint.TabIndex = 147;
+            // 
+            // lblAppoint
+            // 
+            this.lblAppoint.AutoSize = true;
+            this.lblAppoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblAppoint.Location = new System.Drawing.Point(20, 420);
+            this.lblAppoint.Name = "lblAppoint";
+            this.lblAppoint.Size = new System.Drawing.Size(121, 20);
+            this.lblAppoint.TabIndex = 146;
+            this.lblAppoint.Text = "Date of Appoint";
+            // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(231, 476);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(87, 38);
+            this.btnReset.TabIndex = 132;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(325, 476);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(91, 38);
+            this.btnClose.TabIndex = 131;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(139, 476);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(85, 38);
+            this.btnSave.TabIndex = 130;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // CreateTeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 478);
+            this.ClientSize = new System.Drawing.Size(439, 527);
+            this.Controls.Add(this.dtpAppoint);
+            this.Controls.Add(this.lblAppoint);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblAddress);
@@ -338,5 +365,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.DateTimePicker dtpAppoint;
+        private System.Windows.Forms.Label lblAppoint;
     }
 }

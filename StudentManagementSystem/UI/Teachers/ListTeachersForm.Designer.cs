@@ -33,7 +33,7 @@
             this.lblcount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
-            this.dgvStudents = new System.Windows.Forms.DataGridView();
+            this.dgvTeachers = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.lbltop = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnADD = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,16 +89,16 @@
             this.txtsearch.Size = new System.Drawing.Size(143, 23);
             this.txtsearch.TabIndex = 0;
             // 
-            // dgvStudents
+            // dgvTeachers
             // 
-            this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(23, 109);
-            this.dgvStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvStudents.Name = "dgvStudents";
-            this.dgvStudents.RowHeadersWidth = 51;
-            this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(1052, 296);
-            this.dgvStudents.TabIndex = 76;
+            this.dgvTeachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTeachers.Location = new System.Drawing.Point(23, 109);
+            this.dgvTeachers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvTeachers.Name = "dgvTeachers";
+            this.dgvTeachers.RowHeadersWidth = 51;
+            this.dgvTeachers.RowTemplate.Height = 24;
+            this.dgvTeachers.Size = new System.Drawing.Size(1052, 296);
+            this.dgvTeachers.TabIndex = 76;
             // 
             // panel1
             // 
@@ -152,6 +152,7 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnClose
             // 
@@ -236,6 +237,7 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -249,6 +251,7 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnADD
             // 
@@ -262,6 +265,7 @@
             this.btnADD.Text = "Add";
             this.btnADD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnADD.UseVisualStyleBackColor = true;
+            this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
             // ListTeachersForm
             // 
@@ -277,13 +281,14 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnADD);
             this.Controls.Add(this.groupBoxline);
-            this.Controls.Add(this.dgvStudents);
+            this.Controls.Add(this.dgvTeachers);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ListTeachersForm";
             this.Text = "ListTeachersForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
+            this.Load += new System.EventHandler(this.ListTeachersForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -295,7 +300,7 @@
         private System.Windows.Forms.Label lblcount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtsearch;
-        private System.Windows.Forms.DataGridView dgvStudents;
+        private System.Windows.Forms.DataGridView dgvTeachers;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.Button btnSearch;

@@ -28,31 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GradesForm));
             this.txtGradename = new System.Windows.Forms.TextBox();
             this.lblGradensme = new System.Windows.Forms.Label();
             this.lblcount = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.groupBoxline = new System.Windows.Forms.GroupBox();
-            this.dgvStudents = new System.Windows.Forms.DataGridView();
+            this.dgvGrades = new System.Windows.Forms.DataGridView();
             this.lbltop = new System.Windows.Forms.Label();
-            this.btnAddsubject = new System.Windows.Forms.Button();
-            this.btnAddgrade = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.lblGradeorder = new System.Windows.Forms.Label();
             this.txtGradeorder = new System.Windows.Forms.TextBox();
             this.lblgradecolor = new System.Windows.Forms.Label();
             this.txtGradecolor = new System.Windows.Forms.TextBox();
             this.lblGradegroup = new System.Windows.Forms.Label();
             this.txtGradegroup = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnAddgrade = new System.Windows.Forms.Button();
+            this.btnAddsubject = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrades)).BeginInit();
             this.SuspendLayout();
             // 
             // txtGradename
@@ -98,19 +101,6 @@
             this.panel1.Size = new System.Drawing.Size(404, 46);
             this.panel1.TabIndex = 106;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(175, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 23);
-            this.button1.TabIndex = 127;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -139,16 +129,16 @@
             this.groupBoxline.TabIndex = 108;
             this.groupBoxline.TabStop = false;
             // 
-            // dgvStudents
+            // dgvGrades
             // 
-            this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(20, 112);
-            this.dgvStudents.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvStudents.Name = "dgvStudents";
-            this.dgvStudents.RowHeadersWidth = 51;
-            this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(394, 350);
-            this.dgvStudents.TabIndex = 107;
+            this.dgvGrades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrades.Location = new System.Drawing.Point(20, 112);
+            this.dgvGrades.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvGrades.Name = "dgvGrades";
+            this.dgvGrades.RowHeadersWidth = 51;
+            this.dgvGrades.RowTemplate.Height = 24;
+            this.dgvGrades.Size = new System.Drawing.Size(394, 350);
+            this.dgvGrades.TabIndex = 107;
             // 
             // lbltop
             // 
@@ -162,102 +152,6 @@
             this.lbltop.TabIndex = 105;
             this.lbltop.Text = "Grades Details";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAddsubject
-            // 
-            this.btnAddsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAddsubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
-            this.btnAddsubject.Location = new System.Drawing.Point(167, 492);
-            this.btnAddsubject.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddsubject.Name = "btnAddsubject";
-            this.btnAddsubject.Size = new System.Drawing.Size(122, 41);
-            this.btnAddsubject.TabIndex = 125;
-            this.btnAddsubject.Text = "Add Subject";
-            this.btnAddsubject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddsubject.UseVisualStyleBackColor = true;
-            // 
-            // btnAddgrade
-            // 
-            this.btnAddgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAddgrade.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
-            this.btnAddgrade.Location = new System.Drawing.Point(695, 329);
-            this.btnAddgrade.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddgrade.Name = "btnAddgrade";
-            this.btnAddgrade.Size = new System.Drawing.Size(72, 37);
-            this.btnAddgrade.TabIndex = 126;
-            this.btnAddgrade.Text = "Add";
-            this.btnAddgrade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddgrade.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
-            this.btnDelete.Location = new System.Drawing.Point(293, 494);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(90, 39);
-            this.btnDelete.TabIndex = 147;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(675, 495);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(89, 37);
-            this.btnClose.TabIndex = 145;
-            this.btnClose.Text = "Close";
-            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnExport
-            // 
-            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
-            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExport.Location = new System.Drawing.Point(474, 494);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(93, 37);
-            this.btnExport.TabIndex = 144;
-            this.btnExport.Text = "Export";
-            this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExport.UseVisualStyleBackColor = true;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
-            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(387, 494);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(83, 37);
-            this.btnPrint.TabIndex = 143;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPrint.UseVisualStyleBackColor = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(571, 495);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(100, 37);
-            this.btnRefresh.TabIndex = 160;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // lblGradeorder
             // 
@@ -319,11 +213,153 @@
             this.txtGradegroup.Size = new System.Drawing.Size(188, 29);
             this.txtGradegroup.TabIndex = 116;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(571, 495);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(100, 37);
+            this.btnRefresh.TabIndex = 160;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
+            this.btnDelete.Location = new System.Drawing.Point(293, 494);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(90, 39);
+            this.btnDelete.TabIndex = 147;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(675, 495);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(89, 37);
+            this.btnClose.TabIndex = 145;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.Location = new System.Drawing.Point(474, 494);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(93, 37);
+            this.btnExport.TabIndex = 144;
+            this.btnExport.Text = "Export";
+            this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(387, 494);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(83, 37);
+            this.btnPrint.TabIndex = 143;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPrint.UseVisualStyleBackColor = true;
+            // 
+            // btnAddgrade
+            // 
+            this.btnAddgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnAddgrade.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
+            this.btnAddgrade.Location = new System.Drawing.Point(679, 329);
+            this.btnAddgrade.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddgrade.Name = "btnAddgrade";
+            this.btnAddgrade.Size = new System.Drawing.Size(88, 37);
+            this.btnAddgrade.TabIndex = 126;
+            this.btnAddgrade.Text = "Add";
+            this.btnAddgrade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddgrade.UseVisualStyleBackColor = true;
+            this.btnAddgrade.Click += new System.EventHandler(this.btnAddgrade_Click);
+            // 
+            // btnAddsubject
+            // 
+            this.btnAddsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnAddsubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
+            this.btnAddsubject.Location = new System.Drawing.Point(167, 492);
+            this.btnAddsubject.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddsubject.Name = "btnAddsubject";
+            this.btnAddsubject.Size = new System.Drawing.Size(122, 41);
+            this.btnAddsubject.TabIndex = 125;
+            this.btnAddsubject.Text = "Add Subject";
+            this.btnAddsubject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddsubject.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(175, 12);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 23);
+            this.button1.TabIndex = 127;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(679, 371);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(88, 38);
+            this.btnSave.TabIndex = 162;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
+            this.btnEdit.Location = new System.Drawing.Point(77, 492);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(85, 41);
+            this.btnEdit.TabIndex = 163;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 540);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnClose);
@@ -341,14 +377,15 @@
             this.Controls.Add(this.lblGradensme);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBoxline);
-            this.Controls.Add(this.dgvStudents);
+            this.Controls.Add(this.dgvGrades);
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GradesForm";
             this.Text = "GradesForm";
+         
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,7 +399,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.GroupBox groupBoxline;
-        private System.Windows.Forms.DataGridView dgvStudents;
+        private System.Windows.Forms.DataGridView dgvGrades;
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.Button btnAddsubject;
         private System.Windows.Forms.Button btnAddgrade;
@@ -378,5 +415,7 @@
         private System.Windows.Forms.TextBox txtGradecolor;
         private System.Windows.Forms.Label lblGradegroup;
         private System.Windows.Forms.TextBox txtGradegroup;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnEdit;
     }
 }

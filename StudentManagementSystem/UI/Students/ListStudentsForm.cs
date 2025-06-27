@@ -79,7 +79,7 @@ namespace StudentManagementSystem.UI.Students
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-                        if (dgvStudents.SelectedRows.Count == 0)
+            if (dgvStudents.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -89,7 +89,7 @@ namespace StudentManagementSystem.UI.Students
                 EditStudentsForm editStudentForm = new EditStudentsForm(studentId);
                 editStudentForm.ShowDialog();
                 ListStudentsForm_Load(sender, e);
-            }
+        }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {

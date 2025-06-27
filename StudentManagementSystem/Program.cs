@@ -16,7 +16,7 @@ namespace StudentManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI.Students.ListStudentsForm());
+            Application.Run(new UI.Grades.GradesForm());
         }
     }
 }

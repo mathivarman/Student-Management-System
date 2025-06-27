@@ -129,5 +129,22 @@ namespace StudentManagementSystem.UI.Students
                 this.Close();
             }
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+        private void clear()
+        {
+            txtFirstname.Clear();
+            txtLastname.Clear();
+            txtAdmissionNo.Clear();
+            txtTelephoneNo.Clear();
+            txtEmail.Clear();
+            txtAddress.Clear();
+            cmbgrade.SelectedIndex = -1;
+            rdoMale.Checked = false;
+            rdoFemale.Checked = false;
+        }
     }
 }

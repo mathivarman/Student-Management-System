@@ -26,7 +26,7 @@ namespace StudentManagementSystem.UI.Students
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+
             string firstName = txtFirstname.Text;
             string lastName = txtLastname.Text;
             string admissionNo = txtAdmissionNo.Text;
@@ -37,7 +37,7 @@ namespace StudentManagementSystem.UI.Students
             DateTime admissionDate = dtpAdmission.Value;
             string grade = cmbgrade.SelectedIndex != -1 ? cmbgrade.SelectedItem.ToString() : null;
             int gradeid = 0;
-            
+
             if (cmbgrade.SelectedValue != null && int.TryParse(cmbgrade.SelectedValue.ToString(), out int parsedGradeId))
             {
                 gradeid = parsedGradeId;
@@ -70,7 +70,13 @@ namespace StudentManagementSystem.UI.Students
 
             studentsDal.AddStudent(student);
 
+            clear();
 
+            MessageBox.Show("Student created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void clear()
+        {
             txtFirstname.Clear();
             txtLastname.Clear();
             txtAdmissionNo.Clear();
@@ -80,11 +86,8 @@ namespace StudentManagementSystem.UI.Students
             cmbgrade.SelectedIndex = -1;
             rdoMale.Checked = false;
             rdoFemale.Checked = false;
-
-            MessageBox.Show("Student created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        
         private void LoadGrades()
         {
             var gradesDal = new DAL.GradesDal();
@@ -103,6 +106,11 @@ namespace StudentManagementSystem.UI.Students
             {
                 this.Close();
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }
