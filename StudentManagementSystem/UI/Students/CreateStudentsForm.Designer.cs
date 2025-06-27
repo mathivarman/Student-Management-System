@@ -97,6 +97,7 @@
             this.btnClose.Text = "Close";
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -363,6 +364,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CreateStudentsForm";
             this.Text = "CreateStudentsForm";
+            this.Load += new System.EventHandler(this.CreateStudentsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

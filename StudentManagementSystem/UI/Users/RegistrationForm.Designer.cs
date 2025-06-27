@@ -36,6 +36,8 @@
             this.txtConpassword = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblcaption = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblsinup = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -43,8 +45,6 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblcaption = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -129,6 +129,28 @@
             this.panel1.Size = new System.Drawing.Size(495, 566);
             this.panel1.TabIndex = 83;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(95, 336);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(322, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "one line of code at a time!";
+            // 
+            // lblcaption
+            // 
+            this.lblcaption.AutoSize = true;
+            this.lblcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblcaption.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblcaption.Location = new System.Drawing.Point(95, 305);
+            this.lblcaption.Name = "lblcaption";
+            this.lblcaption.Size = new System.Drawing.Size(313, 31);
+            this.lblcaption.TabIndex = 3;
+            this.lblcaption.Text = "Exploring the world of IT,";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.yarrlit;
@@ -202,6 +224,7 @@
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -216,28 +239,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(95, 336);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 31);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "one line of code at a time!";
-            // 
-            // lblcaption
-            // 
-            this.lblcaption.AutoSize = true;
-            this.lblcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblcaption.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblcaption.Location = new System.Drawing.Point(95, 305);
-            this.lblcaption.Name = "lblcaption";
-            this.lblcaption.Size = new System.Drawing.Size(313, 31);
-            this.lblcaption.TabIndex = 3;
-            this.lblcaption.Text = "Exploring the world of IT,";
             // 
             // RegistrationForm
             // 

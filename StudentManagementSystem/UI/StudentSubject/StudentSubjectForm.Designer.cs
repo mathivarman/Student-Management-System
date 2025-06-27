@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentSubjectForm));
             this.lbltop = new System.Windows.Forms.Label();
             this.panalSearch = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@
             this.panalSearch.Controls.Add(this.txtsearch);
             this.panalSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.panalSearch.Location = new System.Drawing.Point(0, 37);
-            this.panalSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panalSearch.Margin = new System.Windows.Forms.Padding(2);
             this.panalSearch.Name = "panalSearch";
             this.panalSearch.Size = new System.Drawing.Size(644, 46);
             this.panalSearch.TabIndex = 46;
@@ -70,10 +71,10 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(121, 13);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(86, 23);
             this.btnSearch.TabIndex = 48;
@@ -84,7 +85,7 @@
             // 
             this.txtsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtsearch.Location = new System.Drawing.Point(9, 13);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(108, 23);
             this.txtsearch.TabIndex = 0;
@@ -93,7 +94,7 @@
             // 
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(9, 88);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(626, 250);
             this.listView1.TabIndex = 47;
@@ -110,9 +111,9 @@
             // btnAddsubject
             // 
             this.btnAddsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAddsubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
+            this.btnAddsubject.Image = ((System.Drawing.Image)(resources.GetObject("btnAddsubject.Image")));
             this.btnAddsubject.Location = new System.Drawing.Point(89, 373);
-            this.btnAddsubject.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddsubject.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddsubject.Name = "btnAddsubject";
             this.btnAddsubject.Size = new System.Drawing.Size(84, 37);
             this.btnAddsubject.TabIndex = 135;
@@ -124,9 +125,9 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.Location = new System.Drawing.Point(177, 373);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(87, 37);
             this.btnDelete.TabIndex = 147;
@@ -137,10 +138,10 @@
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
+            this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExport.Location = new System.Drawing.Point(456, 373);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(89, 37);
             this.btnExport.TabIndex = 150;
@@ -151,10 +152,10 @@
             // btnPrint
             // 
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrint.Location = new System.Drawing.Point(373, 373);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(79, 37);
             this.btnPrint.TabIndex = 149;
@@ -165,24 +166,25 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point(549, 373);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(83, 37);
             this.btnClose.TabIndex = 148;
             this.btnClose.Text = "Close";
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefresh.Location = new System.Drawing.Point(268, 373);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(101, 37);
             this.btnRefresh.TabIndex = 160;
@@ -205,7 +207,7 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.panalSearch);
             this.Controls.Add(this.lbltop);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StudentSubjectForm";
             this.Text = "StudentSubjectForm";
             this.Load += new System.EventHandler(this.StudentSubjectForm_Load);

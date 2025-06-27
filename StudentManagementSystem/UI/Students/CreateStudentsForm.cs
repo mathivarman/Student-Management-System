@@ -16,6 +16,12 @@ namespace StudentManagementSystem.UI.Students
         public CreateStudentsForm()
         {
             InitializeComponent();
+            
+        }
+
+        private void CreateStudentsForm_Load(object sender, EventArgs e)
+        {
+            LoadGrades();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -31,13 +37,15 @@ namespace StudentManagementSystem.UI.Students
             DateTime admissionDate = dtpAdmission.Value;
             string grade = cmbgrade.SelectedIndex != -1 ? cmbgrade.SelectedItem.ToString() : null;
             int gradeid = 0;
-            if (grade != null && int.TryParse(new string(grade.Where(char.IsDigit).ToArray()), out int gradeids))
+            
+            if (cmbgrade.SelectedValue != null && int.TryParse(cmbgrade.SelectedValue.ToString(), out int parsedGradeId))
             {
-                gradeid = gradeids;
+                gradeid = parsedGradeId;
             }
             else
             {
-                gradeid = 0; // Default or error handling
+                MessageBox.Show("Please select a valid grade.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             string gender = rdoMale.Checked ? "Male" : "Female";
 
@@ -74,6 +82,27 @@ namespace StudentManagementSystem.UI.Students
             rdoFemale.Checked = false;
 
             MessageBox.Show("Student created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        
+        private void LoadGrades()
+        {
+            var gradesDal = new DAL.GradesDal();
+            DataTable gradeTable = gradesDal.GetAllGrades();
+
+            cmbgrade.DataSource = gradeTable;
+            cmbgrade.DisplayMember = "grade_name";  
+            cmbgrade.ValueMember = "id";            
+            cmbgrade.SelectedIndex = -1;            
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using StudentManagementSystem.DAL;
+using StudentManagementSystem.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +14,9 @@ namespace StudentManagementSystem.UI.Students
 {
     public partial class EditStudentsForm : Form
     {
-         int id;
+        private int id;
         private DAL.StudentsDal studentsDal = new DAL.StudentsDal();
+
         public EditStudentsForm(int studentID)
         {
             InitializeComponent();
@@ -22,51 +25,75 @@ namespace StudentManagementSystem.UI.Students
 
         private void EditStudentsForm_Load(object sender, EventArgs e)
         {
-            
+            LoadGrades(); 
 
             var student = studentsDal.GetStudentById(id);
-            
-            txtAdmissionNo.Text = student.AdmissionNo;
-            txtFirstname.Text = student.FirstName;
-            txtLastname.Text = student.LastName;
-            txtTelephoneNo.Text = student.Telephone;
-            txtEmail.Text = student.Email;
-            txtAddress.Text = student.Address;
-            dtpDOB.Text = student.DateOfBirth.ToString("yyyy-MM-dd");
-            dtpAdmission.Text = student.DateOfAdmission.ToString("yyyy-MM-dd");
-            rdoMale.Checked = student.Gender == "Male";
-            rdoFemale.Checked = student.Gender == "Female";
-            cmbgrade.SelectedValue = student.GradeId;
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-
-            string ids = Convert.ToString(id);
-            string firstName = txtFirstname.Text;
-            string lastName = txtLastname.Text;
-            string admissionNo = txtAdmissionNo.Text;
-            string telephoneNo = txtTelephoneNo.Text;
-            string email = txtEmail.Text;
-            string address = txtAddress.Text;
-            DateTime dob = dtpDOB.Value;
-            DateTime admissionDate = dtpAdmission.Value;
-            string grade = cmbgrade.SelectedIndex != -1 ? cmbgrade.SelectedItem.ToString() : null;
-            int gradeid = 0;
-            if (grade != null && int.TryParse(new string(grade.Where(char.IsDigit).ToArray()), out int gradeids))
+            if (student != null)
             {
-                gradeid = gradeids;
+                txtAdmissionNo.Text = student.AdmissionNo;
+                txtFirstname.Text = student.FirstName;
+                txtLastname.Text = student.LastName;
+                txtTelephoneNo.Text = student.Telephone;
+                txtEmail.Text = student.Email;
+                txtAddress.Text = student.Address;
+                dtpDOB.Value = student.DateOfBirth;
+                dtpAdmission.Value = student.DateOfAdmission;
+                rdoMale.Checked = student.Gender == "Male";
+                rdoFemale.Checked = student.Gender == "Female";
+                cmbgrade.SelectedValue = student.GradeId;
             }
             else
             {
-                gradeid = 0;
+                MessageBox.Show("Student not found.");
+                this.Close();
             }
-            string gender = rdoMale.Checked ? "Male" : "Female";
+        }
+
+        private void LoadGrades()
+        {
+            var gradesDal = new DAL.GradesDal();
+            DataTable gradeTable = gradesDal.GetAllGrades();
+
+            cmbgrade.DataSource = gradeTable;
+            cmbgrade.DisplayMember = "grade_name";  
+            cmbgrade.ValueMember = "id";            
+            cmbgrade.SelectedIndex = -1;            
+        }
 
 
-            var student = new Model.Student
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string firstName = txtFirstname.Text.Trim();
+            string lastName = txtLastname.Text.Trim();
+            string admissionNo = txtAdmissionNo.Text.Trim();
+            string telephoneNo = txtTelephoneNo.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string address = txtAddress.Text.Trim();
+            DateTime dob = dtpDOB.Value;
+            DateTime admissionDate = dtpAdmission.Value;
+            string gender = rdoMale.Checked ? "Male" : rdoFemale.Checked ? "Female" : "";
+
+            if (string.IsNullOrEmpty(gender))
             {
-                Id = ids,
+                MessageBox.Show("Please select a gender.");
+                return;
+            }
+
+            int gradeid = 0;
+            if (cmbgrade.SelectedValue != null && int.TryParse(cmbgrade.SelectedValue.ToString(), out int parsedGradeId))
+            {
+                gradeid = parsedGradeId;
+            }
+            else
+            {
+                MessageBox.Show("Please select a valid grade.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            var student = new Student
+            {
+                Id = id.ToString(),
                 FirstName = firstName,
                 LastName = lastName,
                 AdmissionNo = admissionNo,
@@ -75,19 +102,32 @@ namespace StudentManagementSystem.UI.Students
                 Address = address,
                 DateOfBirth = dob,
                 DateOfAdmission = admissionDate,
-                GradeId = gradeid,
+                GradeId = gradeid, 
                 Gender = gender,
-                CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
-                CreatedBy = "1"
+                UpdatedBy = "1"
             };
 
 
-           
+            try
+            {
+                studentsDal.UpdateStudent(student);
+                MessageBox.Show("Student details updated successfully.");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error updating student: " + ex.Message);
+            }
+        }
 
-            studentsDal.UpdateStudent(student);
-            MessageBox.Show("Student details updated successfully.");
-            this.Close();
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

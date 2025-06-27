@@ -83,37 +83,36 @@ namespace StudentManagementSystem.DAL
         public bool UpdateStudent(Student student)
         {
             string query = @"UPDATE students SET
-                                admission_no = @admissionNo,
-                                first_name = @firstName,
-                                last_name = @lastName,
-                                gender = @gender,
-                                telephone_no = @telephoneNo,
-                                email_id = @emailId,
-                                address = @address,
-                                date_of_birth = @dob,
-                                date_of_admission = @doa,
-                                grade_id = @gradeId,
-                             WHERE id = @studentId";
+                    first_name = @firstName,
+                    last_name = @lastName,
+                    admission_no = @admissionNo,
+                    telephone_no = @telephoneNo,
+                    email_id = @emailId,
+                    address = @address,
+                    date_of_birth = @dob,
+                    date_of_admission = @doa,
+                    gender = @gender,
+                    grade_id = @gradeId
+                    WHERE id = @studentId";
 
             var parameters = new MySqlParameter[]
             {
-                new MySqlParameter("@studentId", MySqlDbType.Int32) { Value = student.Id },
-                new MySqlParameter("@admissionNo", MySqlDbType.VarChar) { Value = student.AdmissionNo },
-                new MySqlParameter("@firstName", MySqlDbType.VarChar) { Value = student.FirstName },
-                new MySqlParameter("@lastName", MySqlDbType.VarChar) { Value = student.LastName },
-                new MySqlParameter("@gender", MySqlDbType.VarChar) { Value = student.Gender },
-                new MySqlParameter("@telephoneNo", MySqlDbType.VarChar) { Value = student.Telephone },
-                new MySqlParameter("@emailId", MySqlDbType.VarChar) { Value = student.Email },
-                new MySqlParameter("@address", MySqlDbType.VarChar) { Value = student.Address },
-                new MySqlParameter("@dob", MySqlDbType.Date) { Value = student.DateOfBirth },
-                new MySqlParameter("@doa", MySqlDbType.Date) { Value = student.DateOfAdmission },
-                new MySqlParameter("@gradeId", MySqlDbType.Int32) { Value = student.GradeId },
-                //new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = student.UpdatedAt  },
-                //new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = student.UpdatedBy  }
+                    new MySqlParameter("@studentId", MySqlDbType.Int32) { Value = student.Id },
+                    new MySqlParameter("@admissionNo", MySqlDbType.VarChar) { Value = student.AdmissionNo },
+                    new MySqlParameter("@firstName", MySqlDbType.VarChar) { Value = student.FirstName },
+                    new MySqlParameter("@lastName", MySqlDbType.VarChar) { Value = student.LastName },
+                    new MySqlParameter("@gender", MySqlDbType.VarChar) { Value = student.Gender },
+                    new MySqlParameter("@telephoneNo", MySqlDbType.VarChar) { Value = student.Telephone },
+                    new MySqlParameter("@emailId", MySqlDbType.VarChar) { Value = student.Email },
+                    new MySqlParameter("@address", MySqlDbType.VarChar) { Value = student.Address },
+                    new MySqlParameter("@dob", MySqlDbType.Date) { Value = student.DateOfBirth },
+                    new MySqlParameter("@doa", MySqlDbType.Date) { Value = student.DateOfAdmission },
+                    new MySqlParameter("@gradeId", MySqlDbType.Int32) { Value = student.GradeId }
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;
         }
+
 
         public bool DeleteStudent(int studentId)
         {

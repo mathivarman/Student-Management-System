@@ -15,15 +15,15 @@ namespace StudentManagementSystem.DAL
         public DataTable GetAllGrades()
         {
             string query = @"SELECT 
-                                id, grade_name, grade_order, grade_color, grade_group,
-                                created_at, created_by, updated_at, updated_by,
-                                deleted_at, deleted_by
-                             FROM grades
-                             WHERE deleted_at IS NULL
-                             ORDER BY grade_order";
+                        id, grade_name, grade_order, grade_color, grade_group,
+                        created_at, created_by, updated_at, updated_by,
+                        deleted_at, deleted_by
+                     FROM grades
+                     ORDER BY grade_order";
 
             return DbHelper.GetData(query);
         }
+
 
         public Grade GetGradeById(int gradeId)
         {

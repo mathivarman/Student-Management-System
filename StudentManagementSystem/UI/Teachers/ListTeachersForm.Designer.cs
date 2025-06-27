@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListTeachersForm));
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.lblcount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -114,7 +115,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(245, 16);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -141,7 +142,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefresh.Location = new System.Drawing.Point(871, 455);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -155,7 +156,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point(984, 454);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -165,11 +166,12 @@
             this.btnClose.Text = "Close";
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
+            this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExport.Location = new System.Drawing.Point(771, 455);
             this.btnExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -183,7 +185,7 @@
             // btnPrint
             // 
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrint.Location = new System.Drawing.Point(684, 455);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -197,7 +199,7 @@
             // btnSubject
             // 
             this.btnSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSubject.Image = global::StudentManagementSystem.Properties.Resources.icons8_books_30__1_;
+            this.btnSubject.Image = ((System.Drawing.Image)(resources.GetObject("btnSubject.Image")));
             this.btnSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubject.Location = new System.Drawing.Point(561, 455);
             this.btnSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -211,7 +213,7 @@
             // btnShow
             // 
             this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnShow.Image = global::StudentManagementSystem.Properties.Resources.icons8_show_30;
+            this.btnShow.Image = ((System.Drawing.Image)(resources.GetObject("btnShow.Image")));
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnShow.Location = new System.Drawing.Point(469, 455);
             this.btnShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -225,7 +227,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.Location = new System.Drawing.Point(373, 455);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
@@ -238,7 +240,7 @@
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnEdit.Image = global::StudentManagementSystem.Properties.Resources.icons8_edit_30;
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.Location = new System.Drawing.Point(288, 456);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
@@ -251,7 +253,7 @@
             // btnADD
             // 
             this.btnADD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnADD.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
+            this.btnADD.Image = ((System.Drawing.Image)(resources.GetObject("btnADD.Image")));
             this.btnADD.Location = new System.Drawing.Point(192, 455);
             this.btnADD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnADD.Name = "btnADD";

@@ -17,6 +17,13 @@ namespace StudentManagementSystem.UI.SubjectTeacher
             InitializeComponent();
         }
 
-   
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

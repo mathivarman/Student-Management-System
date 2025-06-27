@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectTeacherForm));
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.lbltop = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -72,7 +73,7 @@
             // btnAddteacher
             // 
             this.btnAddteacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAddteacher.Image = global::StudentManagementSystem.Properties.Resources.icons8_add_30;
+            this.btnAddteacher.Image = ((System.Drawing.Image)(resources.GetObject("btnAddteacher.Image")));
             this.btnAddteacher.Location = new System.Drawing.Point(31, 407);
             this.btnAddteacher.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddteacher.Name = "btnAddteacher";
@@ -85,7 +86,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(404, 406);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
@@ -99,7 +100,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.icons8_delete_24;
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.Location = new System.Drawing.Point(117, 405);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
@@ -112,7 +113,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point(511, 405);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
@@ -122,11 +123,12 @@
             this.btnClose.Text = "Close";
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.icons8_export_30;
+            this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExport.Location = new System.Drawing.Point(302, 405);
             this.btnExport.Margin = new System.Windows.Forms.Padding(2);
@@ -140,7 +142,7 @@
             // btnPrint
             // 
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.icons8_print_30;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrint.Location = new System.Drawing.Point(210, 405);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(2);
