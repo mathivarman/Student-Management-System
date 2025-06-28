@@ -37,6 +37,7 @@ namespace StudentManagementSystem.UI
             UI.Teachers.ListTeachersForm listTeachersForm = new UI.Teachers.ListTeachersForm();
             listTeachersForm.MdiParent = this;
             listTeachersForm.Show();
+
         }
 
         private void gradesToolStripMenuItem1_Click(object sender, EventArgs e)
