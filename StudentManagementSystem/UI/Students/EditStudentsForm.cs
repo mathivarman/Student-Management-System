@@ -41,6 +41,7 @@ namespace StudentManagementSystem.UI.Students
                 rdoMale.Checked = student.Gender == "Male";
                 rdoFemale.Checked = student.Gender == "Female";
                 cmbgrade.SelectedValue = student.GradeId;
+                lbltop.Text = $"{student.FirstName}'s Details";
             }
             else
             {

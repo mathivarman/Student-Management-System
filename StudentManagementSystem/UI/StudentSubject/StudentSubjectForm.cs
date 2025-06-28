@@ -12,14 +12,17 @@ namespace StudentManagementSystem.UI.StudentSubject
 {
     public partial class StudentSubjectForm : Form
     {
-        public StudentSubjectForm()
+        private int stuid;
+        public StudentSubjectForm(int id)
         {
             InitializeComponent();
+            this.stuid = id;
         }
 
         private void StudentSubjectForm_Load(object sender, EventArgs e)
         {
 
+            
         }
 
         private void btnAddsubject_Click(object sender, EventArgs e)

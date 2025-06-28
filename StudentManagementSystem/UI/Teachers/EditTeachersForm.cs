@@ -32,6 +32,7 @@ namespace StudentManagementSystem.UI.Teachers
                 dtpAppoint.Value = teacher.DateOfAppoint;
                 rdoMale.Checked = teacher.Gender == "Male";
                 rdoFemale.Checked = teacher.Gender == "Female";
+                lbltop.Text = $"{teacher.FirstName}'s Details";
             }
             else
             {

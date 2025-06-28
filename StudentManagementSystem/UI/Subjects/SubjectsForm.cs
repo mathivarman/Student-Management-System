@@ -135,6 +135,7 @@ namespace StudentManagementSystem.UI.Subjects
         {
             LoadSubjects();
             btnSave.Enabled = false;
+            lblcount.Text = $"Total Subjects: {dgvSubjects.Rows.Count}";
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

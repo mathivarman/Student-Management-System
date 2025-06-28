@@ -50,6 +50,7 @@ namespace StudentManagementSystem.UI.Teachers
             dgvTeachers.Columns["deleted_at"].Visible = false;
             dgvTeachers.Columns["deleted_by"].Visible = false;
             dgvTeachers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            lblcount.Text = $"Total Teachers: {dgvTeachers.Rows.Count}";
 
 
         }
@@ -100,6 +101,12 @@ namespace StudentManagementSystem.UI.Teachers
                 MessageBox.Show("Teacher deleted successfully.");
 
             }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            ShowTeachersForm showTeachersForm = new ShowTeachersForm(Convert.ToInt32(dgvTeachers.SelectedRows[0].Cells["id"].Value));
+            showTeachersForm.ShowDialog();
         }
     }
 }

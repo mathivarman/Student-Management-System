@@ -42,6 +42,7 @@ namespace StudentManagementSystem.UI.Students
             dgvStudents.Columns["deleted_at"].Visible = false;
             dgvStudents.Columns["deleted_by"].Visible = false;
             dgvStudents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            lblcount.Text = $"Total Students: {dgvStudents.Rows.Count}";
 
         }
 
@@ -103,6 +104,81 @@ namespace StudentManagementSystem.UI.Students
             {
                 this.Close();
             }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            if (dgvStudents.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int id = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
+            ShowStudentsForm showStudentsForm = new ShowStudentsForm(id);
+            showStudentsForm.ShowDialog();
+
+        }
+
+        private void lblcount_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            int searchId = txtsearch.Text.Trim().Length > 0 ? Convert.ToInt32(txtsearch.Text) : 0;
+            Model.Student student = studentsDal.GetStudentById(searchId);
+
+            if (student != null)
+            {
+                DataTable searchResults = new DataTable();
+                searchResults.Columns.Add("id", typeof(int));
+                searchResults.Columns.Add("admission_no", typeof(string));
+                searchResults.Columns.Add("first_name", typeof(string));
+                searchResults.Columns.Add("last_name", typeof(string));
+                searchResults.Columns.Add("gender", typeof(string));
+                searchResults.Columns.Add("telephone_no", typeof(string));
+                searchResults.Columns.Add("email_id", typeof(string));
+                searchResults.Columns.Add("address", typeof(string));
+                searchResults.Columns.Add("date_of_birth", typeof(DateTime));
+                searchResults.Columns.Add("date_of_admission", typeof(DateTime));
+                searchResults.Columns.Add("grade_id", typeof(int));
+
+                searchResults.Rows.Add(
+                    student.Id,
+                    student.AdmissionNo,
+                    student.FirstName,
+                    student.LastName,
+                    student.Gender,
+                    student.Telephone,
+                    student.Email,
+                    student.Address,
+                    student.DateOfBirth,
+                    student.DateOfAdmission,
+                    student.GradeId
+                );
+
+                dgvStudents.DataSource = searchResults;
+            }
+            else
+            {
+                MessageBox.Show("No student found with the given ID.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnSubject_Click(object sender, EventArgs e)
+        {
+            //if (dgvStudents.SelectedRows.Count == 0)
+            //{
+            //    MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+
+            //int id = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
+            //UI.StudentSubjects.StudentSubjectsForm studentSubjectsForm = new UI.StudentSubjects.StudentSubjectsForm(id);
+            //studentSubjectsForm.ShowDialog();
+            //ListStudentsForm_Load(sender, e);
         }
     }
     }

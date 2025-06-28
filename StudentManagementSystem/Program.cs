@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentManagementSystem.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace StudentManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI.Grades.GradesForm());
+            Application.Run(new DashboardForm());
         }
     }
 }

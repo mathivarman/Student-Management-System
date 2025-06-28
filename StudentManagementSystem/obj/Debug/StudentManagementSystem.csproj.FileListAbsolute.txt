@@ -62,3 +62,4 @@ E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentMan
 E:\github\Student-Management-System\StudentManagementSystem\bin\Debug\MySql.Data.dll
 E:\github\Student-Management-System\StudentManagementSystem\bin\Debug\System.Memory.dll
 E:\github\Student-Management-System\StudentManagementSystem\bin\Debug\System.Numerics.Vectors.dll
+E:\github\Student-Management-System\StudentManagementSystem\obj\Debug\StudentManagementSystem.UI.DashboardForm.resources

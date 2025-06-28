@@ -336,6 +336,7 @@
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditTeachersForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditTeachersForm";
             this.Load += new System.EventHandler(this.EditTeachersForm_Load);
             this.ResumeLayout(false);

@@ -228,6 +228,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\GradeSubject\GradeSubjectForm.resx">
       <DependentUpon>GradeSubjectForm.cs</DependentUpon>
     </EmbeddedResource>

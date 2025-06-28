@@ -336,6 +336,7 @@
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CreateTeachersForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateTeachersForm";
             this.ResumeLayout(false);
             this.PerformLayout();

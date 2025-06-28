@@ -33,9 +33,6 @@
             this.lbltop = new System.Windows.Forms.Label();
             this.cmbsubjects = new System.Windows.Forms.ComboBox();
             this.lblGrade = new System.Windows.Forms.Label();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
@@ -53,11 +50,16 @@
             this.lblGender = new System.Windows.Forms.Label();
             this.lblLastname = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
+            this.dtpAppoint = new System.Windows.Forms.DateTimePicker();
+            this.lblAppoint = new System.Windows.Forms.Label();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(-151, 452);
+            this.groupBox1.Location = new System.Drawing.Point(-151, 510);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -99,49 +101,6 @@
             this.lblGrade.Size = new System.Drawing.Size(71, 20);
             this.lblGrade.TabIndex = 114;
             this.lblGrade.Text = "Subjects";
-            // 
-            // btnExport
-            // 
-            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
-            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExport.Location = new System.Drawing.Point(247, 471);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(98, 46);
-            this.btnExport.TabIndex = 127;
-            this.btnExport.Text = "Export";
-            this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExport.UseVisualStyleBackColor = true;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(162, 471);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(85, 46);
-            this.btnPrint.TabIndex = 126;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPrint.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(345, 471);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(91, 46);
-            this.btnClose.TabIndex = 125;
-            this.btnClose.Text = "Close";
-            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtAddress
             // 
@@ -307,10 +266,76 @@
             this.lblFirstName.TabIndex = 146;
             this.lblFirstName.Text = "First Name";
             // 
+            // dtpAppoint
+            // 
+            this.dtpAppoint.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpAppoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtpAppoint.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAppoint.Location = new System.Drawing.Point(193, 465);
+            this.dtpAppoint.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpAppoint.Name = "dtpAppoint";
+            this.dtpAppoint.Size = new System.Drawing.Size(243, 26);
+            this.dtpAppoint.TabIndex = 166;
+            // 
+            // lblAppoint
+            // 
+            this.lblAppoint.AutoSize = true;
+            this.lblAppoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblAppoint.Location = new System.Drawing.Point(39, 470);
+            this.lblAppoint.Name = "lblAppoint";
+            this.lblAppoint.Size = new System.Drawing.Size(121, 20);
+            this.lblAppoint.TabIndex = 165;
+            this.lblAppoint.Text = "Date of Appoint";
+            // 
+            // btnExport
+            // 
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.Location = new System.Drawing.Point(247, 529);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(98, 46);
+            this.btnExport.TabIndex = 127;
+            this.btnExport.Text = "Export";
+            this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(162, 529);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(85, 46);
+            this.btnPrint.TabIndex = 126;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPrint.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(345, 529);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(91, 46);
+            this.btnClose.TabIndex = 125;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // ShowTeachersForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(464, 535);
+            this.ClientSize = new System.Drawing.Size(464, 586);
+            this.Controls.Add(this.dtpAppoint);
+            this.Controls.Add(this.lblAppoint);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblAddress);
@@ -337,7 +362,9 @@
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ShowTeachersForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShowTeachersForm";
+            this.Load += new System.EventHandler(this.ShowTeachersForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,5 +395,7 @@
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label lblLastname;
         private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.DateTimePicker dtpAppoint;
+        private System.Windows.Forms.Label lblAppoint;
     }
 }

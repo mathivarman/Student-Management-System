@@ -148,5 +148,10 @@ namespace StudentManagementSystem.UI.Grades
             LoadGrades();
             ClearForm();
         }
+
+        private void GradesForm_Load(object sender, EventArgs e)
+        {
+            lblcount.Text = $"Total Grades: {dgvGrades.Rows.Count}";
+        }
     }
 }

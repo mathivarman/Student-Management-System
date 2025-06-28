@@ -26,28 +26,78 @@ namespace StudentManagementSystem.UI.Students
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
-            string firstName = txtFirstname.Text;
-            string lastName = txtLastname.Text;
-            string admissionNo = txtAdmissionNo.Text;
-            string telephoneNo = txtTelephoneNo.Text;
-            string email = txtEmail.Text;
-            string address = txtAddress.Text;
-            DateTime dob = dtpDOB.Value;
-            DateTime admissionDate = dtpAdmission.Value;
+            string firstName = txtFirstname.Text.Trim();
+            string lastName = txtLastname.Text.Trim();
+            string admissionNo = txtAdmissionNo.Text.Trim();
+            string telephoneNo = txtTelephoneNo.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string address = txtAddress.Text.Trim();
+            DateTime dob = dtpDOB.Value.Date;
+            DateTime admissionDate = dtpAdmission.Value.Date;
             string grade = cmbgrade.SelectedIndex != -1 ? cmbgrade.SelectedItem.ToString() : null;
             int gradeid = 0;
 
-            if (cmbgrade.SelectedValue != null && int.TryParse(cmbgrade.SelectedValue.ToString(), out int parsedGradeId))
+            if (string.IsNullOrWhiteSpace(firstName))
             {
-                gradeid = parsedGradeId;
+                MessageBox.Show("First name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            if (string.IsNullOrWhiteSpace(lastName))
+            {
+                MessageBox.Show("Last name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(admissionNo))
+            {
+                MessageBox.Show("Admission number is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(telephoneNo))
+            {
+                MessageBox.Show("Telephone number is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(email) || !email.Contains("@") || !email.Contains("."))
+            {
+                MessageBox.Show("Enter a valid email address.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(address))
+            {
+                MessageBox.Show("Address is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dob >= DateTime.Today)
+            {
+                MessageBox.Show("Date of birth must be a past date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (admissionDate < dob)
+            {
+                MessageBox.Show("Admission date cannot be before date of birth.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cmbgrade.SelectedValue == null || !int.TryParse(cmbgrade.SelectedValue.ToString(), out gradeid))
             {
                 MessageBox.Show("Please select a valid grade.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            string gender = rdoMale.Checked ? "Male" : "Female";
+
+            string gender = rdoMale.Checked ? "Male" : rdoFemale.Checked ? "Female" : "";
+
+            if (string.IsNullOrEmpty(gender))
+            {
+                MessageBox.Show("Please select gender.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
 
             var student = new Model.Student
@@ -67,13 +117,12 @@ namespace StudentManagementSystem.UI.Students
                 CreatedBy = "1"
             };
 
-
             studentsDal.AddStudent(student);
-
             clear();
 
             MessageBox.Show("Student created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
 
         private void clear()
         {
