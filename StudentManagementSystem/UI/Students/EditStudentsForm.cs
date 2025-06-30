@@ -41,7 +41,8 @@ namespace StudentManagementSystem.UI.Students
                 rdoMale.Checked = student.Gender == "Male";
                 rdoFemale.Checked = student.Gender == "Female";
                 cmbgrade.SelectedValue = student.GradeId;
-                lbltop.Text = $"{student.FirstName}'s Details";
+                lbltop.Text = $"{student.FirstName}'s Edits";
+
             }
             else
             {
@@ -146,6 +147,11 @@ namespace StudentManagementSystem.UI.Students
             cmbgrade.SelectedIndex = -1;
             rdoMale.Checked = false;
             rdoFemale.Checked = false;
+        }
+
+        private void lbltop_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

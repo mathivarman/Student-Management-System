@@ -300,9 +300,9 @@
             this.lblsubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblsubjects.Location = new System.Drawing.Point(19, 496);
             this.lblsubjects.Name = "lblsubjects";
-            this.lblsubjects.Size = new System.Drawing.Size(54, 20);
+            this.lblsubjects.Size = new System.Drawing.Size(71, 20);
             this.lblsubjects.TabIndex = 168;
-            this.lblsubjects.Text = "Grade";
+            this.lblsubjects.Text = "Subjects";
             // 
             // btnExport
             // 

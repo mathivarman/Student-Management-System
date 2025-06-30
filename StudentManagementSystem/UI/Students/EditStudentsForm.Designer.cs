@@ -68,6 +68,7 @@
             this.lbltop.TabIndex = 43;
             this.lbltop.Text = "Student\'s Edits";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbltop.Click += new System.EventHandler(this.lbltop_Click);
             // 
             // dtpAdmission
             // 

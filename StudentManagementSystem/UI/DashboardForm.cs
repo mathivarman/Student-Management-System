@@ -55,5 +55,12 @@ namespace StudentManagementSystem.UI
             subjectsForm.MdiParent = this;
             subjectsForm.Show();
         }
+
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+            UI.Students.ListStudentsForm listStudentsForm = new UI.Students.ListStudentsForm();
+            listStudentsForm.MdiParent = this;
+            listStudentsForm.Show();
+        }
     }
 }
