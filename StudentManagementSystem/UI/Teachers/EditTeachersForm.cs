@@ -2,6 +2,7 @@
 using StudentManagementSystem.Model;
 using System;
 using System.Data;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace StudentManagementSystem.UI.Teachers
@@ -56,6 +57,53 @@ namespace StudentManagementSystem.UI.Teachers
             if (string.IsNullOrEmpty(gender))
             {
                 MessageBox.Show("Please select a gender.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(firstName))
+            {
+                MessageBox.Show("First Name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(lastName))
+            {
+                MessageBox.Show("Last Name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(telephone) || !telephone.All(char.IsDigit) || telephone.Length != 10)
+            {
+                MessageBox.Show("Telephone number is required and must be 10 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(nic) || (nic.Length != 10 && nic.Length != 12))
+            {
+                MessageBox.Show("NIC is required and must be 10 or 12 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(email) || !email.Contains("@") || !email.Contains("."))
+            {
+                MessageBox.Show("Enter a valid email address.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(address))
+            {
+                MessageBox.Show("Address is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dob >= DateTime.Today)
+            {
+                MessageBox.Show("Date of birth must be a past date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dateOfAppoint < dob)
+            {
+                MessageBox.Show("Date of Appointment cannot be earlier than Date of Birth.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

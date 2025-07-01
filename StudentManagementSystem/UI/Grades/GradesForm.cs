@@ -153,5 +153,14 @@ namespace StudentManagementSystem.UI.Grades
         {
             lblcount.Text = $"Total Grades: {dgvGrades.Rows.Count}";
         }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            string filter = txtsearch.Text.Trim();
+            (dgvGrades.DataSource as DataTable).DefaultView.RowFilter =
+                $"grade_name LIKE '%{filter}%'";
+            lblcount.Text = $"Total Grades: {dgvGrades.Rows.Count}";
+
+        }
     }
 }

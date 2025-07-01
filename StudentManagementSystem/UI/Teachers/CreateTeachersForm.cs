@@ -31,15 +31,74 @@ namespace StudentManagementSystem.UI.Teachers
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string firstName = txtFirstname.Text;
-            string lastName = txtLastname.Text;
-            string gender = rdoMale.Checked ? "Male" : "Female";
-            string telephone = txtTelephone.Text;
-            string nic = txtNIC.Text;
-            string email = txtEmail.Text;
-            string address = txtAddress.Text;
+            
+            string firstName = txtFirstname.Text.Trim();
+            string lastName = txtLastname.Text.Trim();
+            string gender = rdoMale.Checked ? "Male" : rdoFemale.Checked ? "Female" : "";
+            string telephone = txtTelephone.Text.Trim();
+            string nic = txtNIC.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string address = txtAddress.Text.Trim();
             DateTime dob = dtpDOB.Value;
             DateTime dateOfAppoint = dtpAppoint.Value;
+
+           
+
+            if (string.IsNullOrWhiteSpace(firstName))
+            {
+                MessageBox.Show("First Name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(lastName))
+            {
+                MessageBox.Show("Last Name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(gender))
+            {
+                MessageBox.Show("Please select a gender.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(telephone) || !telephone.All(char.IsDigit) || telephone.Length != 10)
+            {
+                MessageBox.Show("Telephone number is required and must be 10 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(nic) || (nic.Length != 10 && nic.Length != 12))
+            {
+                MessageBox.Show("NIC is required and must be 10 or 12 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(email) || !email.Contains("@") || !email.Contains("."))
+            {
+                MessageBox.Show("Enter a valid email address.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(address))
+            {
+                MessageBox.Show("Address is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dob >= DateTime.Today)
+            {
+                MessageBox.Show("Date of birth must be a past date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dateOfAppoint < dob)
+            {
+                MessageBox.Show("Date of Appointment cannot be earlier than Date of Birth.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+           
 
             var teacher = new Teacher
             {
@@ -53,7 +112,7 @@ namespace StudentManagementSystem.UI.Teachers
                 DateOfBirth = dob,
                 DateOfAppoint = dateOfAppoint,
                 CreatedAt = DateTime.Now,
-                CreatedBy = "1", 
+                CreatedBy = "1",
                 UpdatedAt = DateTime.Now
             };
 
@@ -68,6 +127,10 @@ namespace StudentManagementSystem.UI.Teachers
                 MessageBox.Show("Error adding teacher: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+       
+        
+
 
         private void clear()
         {
@@ -86,6 +149,11 @@ namespace StudentManagementSystem.UI.Teachers
         private void btnReset_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void CreateTeachersForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

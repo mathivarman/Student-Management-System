@@ -169,19 +169,28 @@ namespace StudentManagementSystem.UI.Students
 
         private void btnSubject_Click(object sender, EventArgs e)
         {
-            //if (dgvStudents.SelectedRows.Count == 0)
-            //{
-            //    MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
+            if (dgvStudents.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            //int id = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
-            //UI.StudentSubjects.StudentSubjectsForm studentSubjectsForm = new UI.StudentSubjects.StudentSubjectsForm(id);
-            //studentSubjectsForm.ShowDialog();
-            //ListStudentsForm_Load(sender, e);
+            int id = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
+            UI.StudentSubject.StudentSubjectForm studentSubjectsForm = new UI.StudentSubject.StudentSubjectForm(id);
+            studentSubjectsForm.ShowDialog();
+
+        }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            string filter = txtsearch.Text.Trim();
+            (dgvStudents.DataSource as DataTable).DefaultView.RowFilter =
+                $"first_name LIKE '%{filter}%' OR last_name LIKE '%{filter}%' OR admission_no LIKE '%{filter}%'";
+            lblcount.Text = $"Total Students: {dgvStudents.Rows.Count}";
+
         }
     }
-    }
+ }
             
        
     

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListTeachersForm));
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.lblcount = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.dgvTeachers = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,7 +45,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnADD = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,15 +69,15 @@
             this.lblcount.TabIndex = 48;
             this.lblcount.Text = "No of Teachers 100";
             // 
-            // label1
+            // lblSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(7, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "Enter ID";
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblSearch.Location = new System.Drawing.Point(7, 18);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(53, 17);
+            this.lblSearch.TabIndex = 46;
+            this.lblSearch.Text = "Search";
             // 
             // txtsearch
             // 
@@ -88,9 +87,11 @@
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(143, 23);
             this.txtsearch.TabIndex = 0;
+            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
             // 
             // dgvTeachers
             // 
+            this.dgvTeachers.AllowUserToAddRows = false;
             this.dgvTeachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTeachers.Location = new System.Drawing.Point(23, 109);
             this.dgvTeachers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -102,9 +103,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.lblcount);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblSearch);
             this.panel1.Controls.Add(this.txtsearch);
             this.panel1.Location = new System.Drawing.Point(23, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -255,19 +255,6 @@
             this.btnADD.UseVisualStyleBackColor = true;
             this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(245, 16);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(111, 27);
-            this.btnSearch.TabIndex = 49;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // ListTeachersForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -300,12 +287,11 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBoxline;
         private System.Windows.Forms.Label lblcount;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.DataGridView dgvTeachers;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbltop;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnExport;

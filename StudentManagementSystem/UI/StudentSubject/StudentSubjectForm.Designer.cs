@@ -33,7 +33,7 @@
             this.panalSearch = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvstudentsubjects = new System.Windows.Forms.ListView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAddsubject = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -90,15 +90,15 @@
             this.txtsearch.Size = new System.Drawing.Size(108, 23);
             this.txtsearch.TabIndex = 0;
             // 
-            // listView1
+            // lvstudentsubjects
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(9, 88);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(626, 250);
-            this.listView1.TabIndex = 47;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvstudentsubjects.HideSelection = false;
+            this.lvstudentsubjects.Location = new System.Drawing.Point(9, 88);
+            this.lvstudentsubjects.Margin = new System.Windows.Forms.Padding(2);
+            this.lvstudentsubjects.Name = "lvstudentsubjects";
+            this.lvstudentsubjects.Size = new System.Drawing.Size(626, 250);
+            this.lvstudentsubjects.TabIndex = 47;
+            this.lvstudentsubjects.UseCompatibleStateImageBehavior = false;
             // 
             // groupBox1
             // 
@@ -204,7 +204,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAddsubject);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvstudentsubjects);
             this.Controls.Add(this.panalSearch);
             this.Controls.Add(this.lbltop);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -222,7 +222,7 @@
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.Panel panalSearch;
         private System.Windows.Forms.TextBox txtsearch;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvstudentsubjects;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnAddsubject;

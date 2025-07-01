@@ -108,5 +108,13 @@ namespace StudentManagementSystem.UI.Teachers
             ShowTeachersForm showTeachersForm = new ShowTeachersForm(Convert.ToInt32(dgvTeachers.SelectedRows[0].Cells["id"].Value));
             showTeachersForm.ShowDialog();
         }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            string filter = txtsearch.Text.Trim();
+            (dgvTeachers.DataSource as DataTable).DefaultView.RowFilter =
+                $"first_name LIKE '%{filter}%' OR last_name LIKE '%{filter}%' OR email_id LIKE '%{filter}%'";
+            lblcount.Text = $"Total Teachers: {dgvTeachers.Rows.Count}";
+        }
     }
 }

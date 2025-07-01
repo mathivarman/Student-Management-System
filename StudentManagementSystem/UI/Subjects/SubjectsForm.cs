@@ -207,5 +207,13 @@ namespace StudentManagementSystem.UI.Subjects
                 MessageBox.Show("Failed to update subject.");
             }
         }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            string filter = txtsearch.Text.Trim();
+            (dgvSubjects.DataSource as DataTable).DefaultView.RowFilter =
+                $"subject_name LIKE '%{filter}%'";
+            lblcount.Text = $"Total Subjects: {dgvSubjects.Rows.Count}";
+        }
     }
 }

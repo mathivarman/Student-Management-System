@@ -33,7 +33,7 @@
             this.lblGradensme = new System.Windows.Forms.Label();
             this.lblcount = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.dgvGrades = new System.Windows.Forms.DataGridView();
@@ -53,7 +53,6 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnAddgrade = new System.Windows.Forms.Button();
             this.btnAddsubject = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrades)).BeginInit();
             this.SuspendLayout();
@@ -91,9 +90,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lblcount);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblSearch);
             this.panel1.Controls.Add(this.txtsearch);
             this.panel1.Location = new System.Drawing.Point(10, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -101,16 +99,16 @@
             this.panel1.Size = new System.Drawing.Size(404, 46);
             this.panel1.TabIndex = 106;
             // 
-            // label1
+            // lblSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(5, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "Enter ID";
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblSearch.Location = new System.Drawing.Point(5, 15);
+            this.lblSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(53, 17);
+            this.lblSearch.TabIndex = 46;
+            this.lblSearch.Text = "Search";
             // 
             // txtsearch
             // 
@@ -120,6 +118,7 @@
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(108, 23);
             this.txtsearch.TabIndex = 0;
+            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
             // 
             // groupBoxline
             // 
@@ -131,6 +130,7 @@
             // 
             // dgvGrades
             // 
+            this.dgvGrades.AllowUserToAddRows = false;
             this.dgvGrades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGrades.Location = new System.Drawing.Point(20, 112);
             this.dgvGrades.Margin = new System.Windows.Forms.Padding(2);
@@ -340,19 +340,6 @@
             this.btnAddsubject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddsubject.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Image = global::StudentManagementSystem.Properties.Resources.icons8_search_15;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(175, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 23);
-            this.button1.TabIndex = 127;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,14 +384,13 @@
         private System.Windows.Forms.Label lblGradensme;
         private System.Windows.Forms.Label lblcount;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.GroupBox groupBoxline;
         private System.Windows.Forms.DataGridView dgvGrades;
         private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.Button btnAddsubject;
         private System.Windows.Forms.Button btnAddgrade;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnExport;

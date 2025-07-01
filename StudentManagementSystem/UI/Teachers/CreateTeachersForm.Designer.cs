@@ -338,6 +338,7 @@
             this.Name = "CreateTeachersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateTeachersForm";
+            this.Load += new System.EventHandler(this.CreateTeachersForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

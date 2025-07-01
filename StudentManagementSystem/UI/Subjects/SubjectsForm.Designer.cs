@@ -31,11 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectsForm));
             this.groupBoxline = new System.Windows.Forms.GroupBox();
             this.dgvSubjects = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblcount = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.lbltop = new System.Windows.Forms.Label();
             this.lblsubject = new System.Windows.Forms.Label();
             this.lblsubindex = new System.Windows.Forms.Label();
@@ -54,7 +53,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnaddgrade = new System.Windows.Forms.Button();
             this.btnAddsubject = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +67,7 @@
             // 
             // dgvSubjects
             // 
+            this.dgvSubjects.AllowUserToAddRows = false;
             this.dgvSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSubjects.Location = new System.Drawing.Point(16, 108);
             this.dgvSubjects.Margin = new System.Windows.Forms.Padding(2);
@@ -78,16 +77,16 @@
             this.dgvSubjects.Size = new System.Drawing.Size(395, 350);
             this.dgvSubjects.TabIndex = 90;
             // 
-            // label1
+            // lblSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(5, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "Enter ID";
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblSearch.Location = new System.Drawing.Point(5, 15);
+            this.lblSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(53, 17);
+            this.lblSearch.TabIndex = 46;
+            this.lblSearch.Text = "Search";
             // 
             // txtsearch
             // 
@@ -97,13 +96,12 @@
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(108, 23);
             this.txtsearch.TabIndex = 0;
+            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lblcount);
-            this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblSearch);
             this.panel1.Controls.Add(this.txtsearch);
             this.panel1.Location = new System.Drawing.Point(8, 44);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -121,17 +119,6 @@
             this.lblcount.Size = new System.Drawing.Size(128, 17);
             this.lblcount.TabIndex = 48;
             this.lblcount.Text = "No of Subjects 100";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSearch.Location = new System.Drawing.Point(174, 12);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(59, 22);
-            this.btnSearch.TabIndex = 47;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // lbltop
             // 
@@ -352,19 +339,6 @@
             this.btnAddsubject.UseVisualStyleBackColor = true;
             this.btnAddsubject.Click += new System.EventHandler(this.btnAddsubject_Click);
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(163, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // SubjectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -407,7 +381,7 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBoxline;
         private System.Windows.Forms.DataGridView dgvSubjects;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblcount;
@@ -416,8 +390,6 @@
         private System.Windows.Forms.Label lblsubindex;
         private System.Windows.Forms.TextBox txtSubjectname;
         private System.Windows.Forms.TextBox txtSubjectindex;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnAddsubject;
         private System.Windows.Forms.Button btnaddgrade;
         private System.Windows.Forms.Button btnExport;

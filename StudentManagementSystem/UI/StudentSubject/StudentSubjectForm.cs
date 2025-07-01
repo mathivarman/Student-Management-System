@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentManagementSystem.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace StudentManagementSystem.UI.StudentSubject
     public partial class StudentSubjectForm : Form
     {
         private int stuid;
+        DAL.StudentSubjectDal studentSubjectDAL = new StudentSubjectDal();
         public StudentSubjectForm(int id)
         {
             InitializeComponent();
@@ -21,8 +23,7 @@ namespace StudentManagementSystem.UI.StudentSubject
 
         private void StudentSubjectForm_Load(object sender, EventArgs e)
         {
-
-            
+         
         }
 
         private void btnAddsubject_Click(object sender, EventArgs e)
