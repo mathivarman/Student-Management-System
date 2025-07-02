@@ -30,8 +30,6 @@ namespace StudentManagementSystem.UI.Subjects
             }
         }
 
-
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dgvSubjects.SelectedRows.Count == 0)
@@ -60,25 +58,24 @@ namespace StudentManagementSystem.UI.Subjects
             }
         }
 
-
         private void btnAddsubject_Click(object sender, EventArgs e)
         {
             string subjectName = txtSubjectname.Text.Trim();
             string subjectIndex = txtSubjectindex.Text.Trim();
             string subjectColor = txtSubjectcolor.Text.Trim();
-            int subjectOrder = 0;
+            decimal subjectOrder = 0;
 
-            //if (!int.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
-            //{
-            //    MessageBox.Show("Please enter a valid subject order.");
-            //    return;
-            //}
+            if (!decimal.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
+            {
+                MessageBox.Show("Please enter a valid subject order (decimal).");
+                return;
+            }
 
-            //if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
-            //{
-            //    MessageBox.Show("Please enter all required fields.");
-            //    return;
-            //}
+            if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
+            {
+                MessageBox.Show("Please enter all required fields.");
+                return;
+            }
 
             var subject = new Subject
             {
@@ -140,6 +137,11 @@ namespace StudentManagementSystem.UI.Subjects
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (dgvSubjects.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             btnSave.Enabled = true;
 
             if (dgvSubjects.SelectedRows.Count > 0)
@@ -170,17 +172,17 @@ namespace StudentManagementSystem.UI.Subjects
             string subjectName = txtSubjectname.Text.Trim();
             string subjectIndex = txtSubjectindex.Text.Trim();
             string subjectColor = txtSubjectcolor.Text.Trim();
-            int subjectOrder;
-            //if (!int.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
-            //{
-            //    MessageBox.Show("Please enter a valid subject order.");
-            //    return;
-            //}
-            //if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
-            //{
-            //    MessageBox.Show("Please enter all required fields.");
-            //    return;
-            //}
+            decimal subjectOrder;
+            if (!decimal.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
+            {
+                MessageBox.Show("Please enter a valid subject order (decimal).");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
+            {
+                MessageBox.Show("Please enter all required fields.");
+                return;
+            }
             var updatedSubject = new Subject
             {
                 Id = editingSubjectId,

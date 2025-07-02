@@ -37,7 +37,7 @@ namespace StudentManagementSystem.DAL
                 Id = Convert.ToInt32(row["id"]),
                 SubjectName = row["subject_name"].ToString(),
                 SubjectIndex = row["subject_index"].ToString(),
-                SubjectOrder = Convert.ToInt32(row["subject_order"]),
+                SubjectOrder = Convert.ToDecimal(row["subject_order"]),
                 SubjectColor = row["subject_color"].ToString(),
                 //CreatedAt = Convert.ToDateTime(row["created_at"]),
                 //CreatedBy = row["created_by"]?.ToString(),
@@ -62,7 +62,7 @@ namespace StudentManagementSystem.DAL
             {
                 new MySqlParameter("@subjectName", MySqlDbType.VarChar) { Value = subject.SubjectName },
                 new MySqlParameter("@subjectIndex", MySqlDbType.VarChar) { Value = subject.SubjectIndex },
-                new MySqlParameter("@subjectOrder", MySqlDbType.Int32) { Value = subject.SubjectOrder },
+                new MySqlParameter("@subjectOrder", MySqlDbType.Decimal) { Value = subject.SubjectOrder },
                 new MySqlParameter("@subjectColor", MySqlDbType.VarChar) { Value = subject.SubjectColor },
                 new MySqlParameter("@createdAt", MySqlDbType.DateTime) { Value = subject.CreatedAt },
                 new MySqlParameter("@createdBy", MySqlDbType.VarChar) { Value = subject.CreatedBy }
@@ -87,7 +87,7 @@ namespace StudentManagementSystem.DAL
                 new MySqlParameter("@id", MySqlDbType.Int32) { Value = subject.Id },
                 new MySqlParameter("@subjectName", MySqlDbType.VarChar) { Value = subject.SubjectName },
                 new MySqlParameter("@subjectIndex", MySqlDbType.VarChar) { Value = subject.SubjectIndex },
-                new MySqlParameter("@subjectOrder", MySqlDbType.Int32) { Value = subject.SubjectOrder },
+                new MySqlParameter("@subjectOrder", MySqlDbType.Decimal) { Value = subject.SubjectOrder },
                 new MySqlParameter("@subjectColor", MySqlDbType.VarChar) { Value = subject.SubjectColor },
                 new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = subject.UpdatedAt },
                 new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = subject.UpdatedBy ?? "" }

@@ -56,11 +56,11 @@ namespace StudentManagementSystem.UI.Grades
             string gradeOrderText = txtGradeorder.Text.Trim();
             string gradeColor = txtGradecolor.Text.Trim();
             string gradeGroup = txtGradegroup.Text.Trim();
-            int gradeOrder;
+            decimal gradeOrder;
 
-            if (!int.TryParse(gradeOrderText, out gradeOrder))
+            if (!decimal.TryParse(gradeOrderText, out gradeOrder))
             {
-                MessageBox.Show("Please enter a valid grade order.");
+                MessageBox.Show("Please enter a valid grade order (decimal).");
                 return;
             }
 
@@ -97,6 +97,11 @@ namespace StudentManagementSystem.UI.Grades
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (dgvGrades.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             btnSave.Enabled = true;
 
             if (dgvGrades.SelectedRows.Count > 0)
@@ -128,11 +133,11 @@ namespace StudentManagementSystem.UI.Grades
             string gradeOrderText = txtGradeorder.Text.Trim();
             string gradeColor = txtGradecolor.Text.Trim();
             string gradeGroup = txtGradegroup.Text.Trim();
-            int gradeOrder;
+            decimal gradeOrder;
 
-            if (!int.TryParse(gradeOrderText, out gradeOrder))
+            if (!decimal.TryParse(gradeOrderText, out gradeOrder))
             {
-                MessageBox.Show("Please enter a valid grade order.");
+                MessageBox.Show("Please enter a valid grade order (decimal).");
                 return;
             }
 

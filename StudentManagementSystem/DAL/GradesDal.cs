@@ -38,7 +38,7 @@ namespace StudentManagementSystem.DAL
             {
                 Id = Convert.ToInt32(row["id"]),
                 GradeName = row["grade_name"].ToString(),
-                GradeOrder = Convert.ToInt32(row["grade_order"]),
+                GradeOrder = Convert.ToDecimal(row["grade_order"]),
                 GradeColor = row["grade_color"].ToString(),
                 GradeGroup = row["grade_group"].ToString(),
                 //CreatedAt = Convert.ToDateTime(row["created_at"]),
@@ -63,7 +63,7 @@ namespace StudentManagementSystem.DAL
             var parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@gradeName", MySqlDbType.VarChar) { Value = grade.GradeName },
-                new MySqlParameter("@gradeOrder", MySqlDbType.Int32) { Value = grade.GradeOrder },
+                new MySqlParameter("@gradeOrder", MySqlDbType.Decimal) { Value = grade.GradeOrder },
                 new MySqlParameter("@gradeColor", MySqlDbType.VarChar) { Value = grade.GradeColor },
                 new MySqlParameter("@gradeGroup", MySqlDbType.VarChar) { Value = grade.GradeGroup },
                 new MySqlParameter("@createdAt", MySqlDbType.DateTime) { Value = grade.CreatedAt },
@@ -88,7 +88,7 @@ namespace StudentManagementSystem.DAL
             {
                 new MySqlParameter("@id", MySqlDbType.Int32) { Value = grade.Id },
                 new MySqlParameter("@gradeName", MySqlDbType.VarChar) { Value = grade.GradeName },
-                new MySqlParameter("@gradeOrder", MySqlDbType.Int32) { Value = grade.GradeOrder },
+                new MySqlParameter("@gradeOrder", MySqlDbType.Decimal) { Value = grade.GradeOrder },
                 new MySqlParameter("@gradeColor", MySqlDbType.VarChar) { Value = grade.GradeColor },
                 new MySqlParameter("@gradeGroup", MySqlDbType.VarChar) { Value = grade.GradeGroup },
                 new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = grade.UpdatedAt },
