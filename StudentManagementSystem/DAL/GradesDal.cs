@@ -41,12 +41,12 @@ namespace StudentManagementSystem.DAL
                 GradeOrder = Convert.ToInt32(row["grade_order"]),
                 GradeColor = row["grade_color"].ToString(),
                 GradeGroup = row["grade_group"].ToString(),
-                CreatedAt = Convert.ToDateTime(row["created_at"]),
-                CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
-                UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
-                DeletedBy = row["deleted_by"]?.ToString()
+                //CreatedAt = Convert.ToDateTime(row["created_at"]),
+                //CreatedBy = row["created_by"]?.ToString(),
+                //UpdatedAt = Convert.ToDateTime(row["updated_at"]),
+                //UpdatedBy = row["updated_by"]?.ToString(),
+                //DeletedAt = Convert.ToDateTime(row["deleted_at"]),
+                //DeletedBy = row["deleted_by"]?.ToString()
             };
         }
 

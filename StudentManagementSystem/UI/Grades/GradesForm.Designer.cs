@@ -200,9 +200,9 @@
             this.lblGradegroup.Location = new System.Drawing.Point(441, 274);
             this.lblGradegroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGradegroup.Name = "lblGradegroup";
-            this.lblGradegroup.Size = new System.Drawing.Size(62, 24);
+            this.lblGradegroup.Size = new System.Drawing.Size(120, 24);
             this.lblGradegroup.TabIndex = 115;
-            this.lblGradegroup.Text = "Grade";
+            this.lblGradegroup.Text = "Grade Group";
             // 
             // txtGradegroup
             // 

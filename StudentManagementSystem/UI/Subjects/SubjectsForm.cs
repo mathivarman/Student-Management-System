@@ -68,17 +68,17 @@ namespace StudentManagementSystem.UI.Subjects
             string subjectColor = txtSubjectcolor.Text.Trim();
             int subjectOrder = 0;
 
-            if (!int.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
-            {
-                MessageBox.Show("Please enter a valid subject order.");
-                return;
-            }
+            //if (!int.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
+            //{
+            //    MessageBox.Show("Please enter a valid subject order.");
+            //    return;
+            //}
 
-            if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
-            {
-                MessageBox.Show("Please enter all required fields.");
-                return;
-            }
+            //if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
+            //{
+            //    MessageBox.Show("Please enter all required fields.");
+            //    return;
+            //}
 
             var subject = new Subject
             {
@@ -171,16 +171,16 @@ namespace StudentManagementSystem.UI.Subjects
             string subjectIndex = txtSubjectindex.Text.Trim();
             string subjectColor = txtSubjectcolor.Text.Trim();
             int subjectOrder;
-            if (!int.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
-            {
-                MessageBox.Show("Please enter a valid subject order.");
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
-            {
-                MessageBox.Show("Please enter all required fields.");
-                return;
-            }
+            //if (!int.TryParse(txtSubjectorder.Text.Trim(), out subjectOrder))
+            //{
+            //    MessageBox.Show("Please enter a valid subject order.");
+            //    return;
+            //}
+            //if (string.IsNullOrWhiteSpace(subjectName) || string.IsNullOrWhiteSpace(subjectIndex))
+            //{
+            //    MessageBox.Show("Please enter all required fields.");
+            //    return;
+            //}
             var updatedSubject = new Subject
             {
                 Id = editingSubjectId,

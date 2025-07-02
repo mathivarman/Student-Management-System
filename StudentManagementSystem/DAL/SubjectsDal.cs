@@ -39,12 +39,12 @@ namespace StudentManagementSystem.DAL
                 SubjectIndex = row["subject_index"].ToString(),
                 SubjectOrder = Convert.ToInt32(row["subject_order"]),
                 SubjectColor = row["subject_color"].ToString(),
-                CreatedAt = Convert.ToDateTime(row["created_at"]),
-                CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
-                UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
-                DeletedBy = row["deleted_by"]?.ToString()
+                //CreatedAt = Convert.ToDateTime(row["created_at"]),
+                //CreatedBy = row["created_by"]?.ToString(),
+                //UpdatedAt = Convert.ToDateTime(row["updated_at"]),
+                //UpdatedBy = row["updated_by"]?.ToString(),
+                //DeletedAt = Convert.ToDateTime(row["deleted_at"]),
+                //DeletedBy = row["deleted_by"]?.ToString()
             };
         }
 
