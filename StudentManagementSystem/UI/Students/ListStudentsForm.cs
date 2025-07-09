@@ -66,8 +66,6 @@ namespace StudentManagementSystem.UI.Students
                 MessageBox.Show("Student deleted successfully.");
 
             }
-
-
         }
 
         private void btnADD_Click(object sender, EventArgs e)
@@ -92,7 +90,7 @@ namespace StudentManagementSystem.UI.Students
                 EditStudentsForm editStudentForm = new EditStudentsForm(studentId);
                 this.Hide();
                 editStudentForm.ShowDialog();
-            this.Show();
+                this.Show();
                 ListStudentsForm_Load(sender, e);
         }
 

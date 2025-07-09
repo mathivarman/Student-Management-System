@@ -58,7 +58,10 @@ namespace StudentManagementSystem.UI.Teachers
         private void btnADD_Click(object sender, EventArgs e)
         {
             CreateTeachersForm createTeachersForm = new CreateTeachersForm();
+            this.Hide();
             createTeachersForm.ShowDialog();
+            this.Show();
+            ListTeachersForm_Load(sender, e);
 
 
         }
@@ -78,7 +81,9 @@ namespace StudentManagementSystem.UI.Teachers
 
             int teacherId = Convert.ToInt32(dgvTeachers.SelectedRows[0].Cells["id"].Value);
             EditTeachersForm editTeachersForm = new EditTeachersForm(teacherId);
+            this.Hide();
             editTeachersForm.ShowDialog();
+            this.Show();
             ListTeachersForm_Load(sender, e);
         }
 
@@ -112,7 +117,9 @@ namespace StudentManagementSystem.UI.Teachers
                 return;
             }
             ShowTeachersForm showTeachersForm = new ShowTeachersForm(Convert.ToInt32(dgvTeachers.SelectedRows[0].Cells["id"].Value));
+            this.Hide();
             showTeachersForm.ShowDialog();
+            this.Show();    
         }
 
         private void txtsearch_TextChanged(object sender, EventArgs e)

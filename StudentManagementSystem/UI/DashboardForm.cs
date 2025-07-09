@@ -17,36 +17,35 @@ namespace StudentManagementSystem.UI
         {
             InitializeComponent();
             this.IsMdiContainer = true;
-
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void CloseAllMdiChildren()
         {
-
+            foreach (Form child in this.MdiChildren)
+            {
+                child.Close();
+            }
         }
 
         private void listStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CloseAllMdiChildren();
             UI.Students.ListStudentsForm listStudentsForm = new UI.Students.ListStudentsForm();
-            
             listStudentsForm.MdiParent = this;
             listStudentsForm.Show();
         }
 
         private void listTeachersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            
+            CloseAllMdiChildren();
             UI.Teachers.ListTeachersForm listTeachersForm = new UI.Teachers.ListTeachersForm();
-           
             listTeachersForm.MdiParent = this;
             listTeachersForm.Show();
-
         }
 
         private void gradesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+            CloseAllMdiChildren();
             UI.Grades.GradesForm listGradesForm = new UI.Grades.GradesForm();
             listGradesForm.MdiParent = this;
             listGradesForm.Show();
@@ -54,7 +53,7 @@ namespace StudentManagementSystem.UI
 
         private void subjectsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+            CloseAllMdiChildren();
             UI.Subjects.SubjectsForm subjectsForm = new UI.Subjects.SubjectsForm();
             subjectsForm.MdiParent = this;
             subjectsForm.Show();
@@ -62,6 +61,7 @@ namespace StudentManagementSystem.UI
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+            CloseAllMdiChildren();
             UI.Students.ListStudentsForm listStudentsForm = new UI.Students.ListStudentsForm();
             listStudentsForm.MdiParent = this;
             listStudentsForm.Show();
@@ -69,11 +69,10 @@ namespace StudentManagementSystem.UI
 
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-
-            UI.Students.CreateStudentsForm createStudentsForm = new UI.Students.CreateStudentsForm();
-            createStudentsForm.MdiParent = this;
-            createStudentsForm.Show();
+            CloseAllMdiChildren();
+            UI.Students.ListStudentsForm listStudentsForm = new UI.Students.ListStudentsForm();
+            listStudentsForm.MdiParent = this;
+            listStudentsForm.Show();
         }
     }
 }
