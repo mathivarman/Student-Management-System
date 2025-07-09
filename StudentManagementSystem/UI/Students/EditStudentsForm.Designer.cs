@@ -292,7 +292,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.icons8_refresh_30;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(243, 504);
+            this.btnReset.Location = new System.Drawing.Point(245, 504);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(87, 38);
@@ -307,7 +307,7 @@
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(337, 504);
+            this.btnClose.Location = new System.Drawing.Point(339, 504);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(91, 38);
@@ -322,7 +322,7 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.icons8_save_30;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(151, 504);
+            this.btnSave.Location = new System.Drawing.Point(153, 504);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(85, 38);
             this.btnSave.TabIndex = 172;

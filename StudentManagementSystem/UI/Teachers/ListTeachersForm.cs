@@ -60,6 +60,7 @@ namespace StudentManagementSystem.UI.Teachers
             CreateTeachersForm createTeachersForm = new CreateTeachersForm();
             createTeachersForm.ShowDialog();
 
+
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -105,6 +106,11 @@ namespace StudentManagementSystem.UI.Teachers
 
         private void btnShow_Click(object sender, EventArgs e)
         {
+            if (dgvTeachers.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("please select a row");
+                return;
+            }
             ShowTeachersForm showTeachersForm = new ShowTeachersForm(Convert.ToInt32(dgvTeachers.SelectedRows[0].Cells["id"].Value));
             showTeachersForm.ShowDialog();
         }

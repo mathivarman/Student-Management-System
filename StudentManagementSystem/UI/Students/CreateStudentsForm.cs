@@ -22,6 +22,7 @@ namespace StudentManagementSystem.UI.Students
         private void CreateStudentsForm_Load(object sender, EventArgs e)
         {
             LoadGrades();
+           
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -153,13 +154,28 @@ namespace StudentManagementSystem.UI.Students
             DialogResult result = MessageBox.Show("Do you want exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
+               
                 this.Close();
             }
         }
+
+     
 
         private void btnReset_Click(object sender, EventArgs e)
         {
             clear();
         }
+
+        private void lbltop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAdmissionNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

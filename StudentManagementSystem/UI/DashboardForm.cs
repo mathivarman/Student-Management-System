@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentManagementSystem.UI.Subjects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,7 @@ namespace StudentManagementSystem.UI
         private void listStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UI.Students.ListStudentsForm listStudentsForm = new UI.Students.ListStudentsForm();
+            
             listStudentsForm.MdiParent = this;
             listStudentsForm.Show();
         }
@@ -34,7 +36,9 @@ namespace StudentManagementSystem.UI
         private void listTeachersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+            
             UI.Teachers.ListTeachersForm listTeachersForm = new UI.Teachers.ListTeachersForm();
+           
             listTeachersForm.MdiParent = this;
             listTeachersForm.Show();
 
@@ -61,6 +65,15 @@ namespace StudentManagementSystem.UI
             UI.Students.ListStudentsForm listStudentsForm = new UI.Students.ListStudentsForm();
             listStudentsForm.MdiParent = this;
             listStudentsForm.Show();
+        }
+
+        private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+            UI.Students.CreateStudentsForm createStudentsForm = new UI.Students.CreateStudentsForm();
+            createStudentsForm.MdiParent = this;
+            createStudentsForm.Show();
         }
     }
 }

@@ -72,10 +72,12 @@ namespace StudentManagementSystem.UI.Students
 
         private void btnADD_Click(object sender, EventArgs e)
         {
-            
             CreateStudentsForm createStudentsForm = new CreateStudentsForm();
+            this.Hide();
             createStudentsForm.ShowDialog();
-         
+            this.Show();
+            ListStudentsForm_Load(sender, e);
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -88,7 +90,9 @@ namespace StudentManagementSystem.UI.Students
 
                 int studentId = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
                 EditStudentsForm editStudentForm = new EditStudentsForm(studentId);
+                this.Hide();
                 editStudentForm.ShowDialog();
+            this.Show();
                 ListStudentsForm_Load(sender, e);
         }
 
@@ -110,13 +114,17 @@ namespace StudentManagementSystem.UI.Students
         {
             if (dgvStudents.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a row to Show.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             int id = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
+            
             ShowStudentsForm showStudentsForm = new ShowStudentsForm(id);
+            this.Hide();
             showStudentsForm.ShowDialog();
+
+            this.Show();
 
         }
 

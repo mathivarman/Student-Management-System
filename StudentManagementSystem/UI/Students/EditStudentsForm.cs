@@ -191,6 +191,8 @@ namespace StudentManagementSystem.UI.Students
             {
                 this.Close();
             }
+
+           
         }
 
         private void btnReset_Click(object sender, EventArgs e)

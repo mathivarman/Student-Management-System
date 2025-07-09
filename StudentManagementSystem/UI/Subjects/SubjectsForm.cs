@@ -164,11 +164,7 @@ namespace StudentManagementSystem.UI.Subjects
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
-            if (editingSubjectId == -1)
-            {
-                MessageBox.Show("Please select a subject to edit.");
-                return;
-            }
+          
             string subjectName = txtSubjectname.Text.Trim();
             string subjectIndex = txtSubjectindex.Text.Trim();
             string subjectColor = txtSubjectcolor.Text.Trim();

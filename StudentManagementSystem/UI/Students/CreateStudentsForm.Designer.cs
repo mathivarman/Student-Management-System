@@ -69,6 +69,7 @@
             this.lbltop.TabIndex = 14;
             this.lbltop.Text = "Student Registration";
             this.lbltop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbltop.Click += new System.EventHandler(this.lbltop_Click);
             // 
             // dtpDOB
             // 
@@ -150,6 +151,7 @@
             this.txtAdmissionNo.Name = "txtAdmissionNo";
             this.txtAdmissionNo.Size = new System.Drawing.Size(256, 26);
             this.txtAdmissionNo.TabIndex = 138;
+            this.txtAdmissionNo.TextChanged += new System.EventHandler(this.txtAdmissionNo_TextChanged);
             // 
             // lblDOB
             // 

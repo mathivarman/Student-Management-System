@@ -63,11 +63,12 @@
             this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
             this.studentsToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.studentsToolStripMenuItem.Text = "Students";
+            this.studentsToolStripMenuItem.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click);
             // 
             // listStudentToolStripMenuItem
             // 
             this.listStudentToolStripMenuItem.Name = "listStudentToolStripMenuItem";
-            this.listStudentToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.listStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listStudentToolStripMenuItem.Text = "ListStudent";
             this.listStudentToolStripMenuItem.Click += new System.EventHandler(this.listStudentToolStripMenuItem_Click);
             // 

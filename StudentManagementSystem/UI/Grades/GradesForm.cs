@@ -123,11 +123,7 @@ namespace StudentManagementSystem.UI.Grades
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (editingGradeId == -1)
-            {
-                MessageBox.Show("Please select a grade to edit.");
-                return;
-            }
+          
 
             string gradeName = txtGradename.Text.Trim();
             string gradeOrderText = txtGradeorder.Text.Trim();
